@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://tfg.upm.es/alvaro/cohousing-senior"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://tfg.upm.es/alvaro/cohousing-senior"
+     versionIRI="http://purl.org/vivienda/cohousing-senior">
+    <Prefix name="" IRI="http://www.semanticweb.org/alvar/ontologies/2026/2/untitled-ontology-2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Filtro para buscar la mejor convivencia posible entre personas mayores</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Característica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infraestructura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#género"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#necesitaAsistenciaNocturna"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nivelDependencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEdad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usaSillaRuedas"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Residente"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Característica"/>
+        <Class IRI="#Infraestructura"/>
+        <Class IRI="#Persona"/>
+    </DisjointClasses>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#género"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#necesitaAsistenciaNocturna"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nivelDependencia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tieneEdad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#usaSillaRuedas"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#género"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#género"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#necesitaAsistenciaNocturna"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nivelDependencia"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEdad"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEdad"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#género"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#necesitaAsistenciaNocturna"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nivelDependencia"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEdad"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
