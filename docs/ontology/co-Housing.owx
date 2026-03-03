@@ -18,16 +18,172 @@
         <Literal>Filtro para buscar la mejor convivencia posible entre personas mayores</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#ActividadFísica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActividadSocial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ascensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BajoEnSal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BarraApoyo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BañoAdaptado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biblioteca"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Característica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Celíaco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CicloSueño"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlInsulina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabético"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DietaEspecial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GradoDependencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HabitacionDoble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HabitacionIndividual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hobby"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hábito"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Infraestructura"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Jardinería"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuegosMesa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lectura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Madrugador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NecesidadMédica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NivelConvivencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NivelOrden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NivelRuido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoMasticable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noctámbulo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxigenoterapia"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Persona"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Rampa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residencia"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Residente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteFumador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenteNivel6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silencio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silencioso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terraza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZonaComún"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneGradoDependencia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneNivelConvivencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ayudaCaminar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ayudaComer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ayudaVestir"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#esFumador"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaInicio"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#género"/>
@@ -42,20 +198,434 @@
         <DataProperty IRI="#nombre"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#puntuacionBarthel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionGds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionGoldberg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionMecLobo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionNecpal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionNorton"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionNpi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionPfeiffer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#puntuacionTinetti"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#tieneEdad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tienePerdidaMemoria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usaPañales"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usaProductosApoyo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#usaSillaRuedas"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#viviaSolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nivel6"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ResidenteFumador"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Residente"/>
+            <DataHasValue>
+                <DataProperty IRI="#esFumador"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResidenteNivel1"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Residente"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#puntuacionNpi"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActividadFísica"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActividadSocial"/>
+        <Class IRI="#NivelRuido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ascensor"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BajoEnSal"/>
+        <Class IRI="#DietaEspecial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BarraApoyo"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BañoAdaptado"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biblioteca"/>
+        <Class IRI="#ZonaComún"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celíaco"/>
+        <Class IRI="#DietaEspecial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CicloSueño"/>
+        <Class IRI="#Hábito"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlInsulina"/>
+        <Class IRI="#NecesidadMédica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabético"/>
+        <Class IRI="#DietaEspecial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DietaEspecial"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+        <Class IRI="#Infraestructura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GradoDependencia"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gym"/>
+        <Class IRI="#ZonaComún"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HabitacionDoble"/>
+        <Class IRI="#Infraestructura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HabitacionIndividual"/>
+        <Class IRI="#Infraestructura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hobby"/>
+        <Class IRI="#Característica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hábito"/>
+        <Class IRI="#Característica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jardinería"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JuegosMesa"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lectura"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madrugador"/>
+        <Class IRI="#CicloSueño"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NecesidadMédica"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NivelConvivencia"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NivelOrden"/>
+        <Class IRI="#Hábito"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NivelRuido"/>
+        <Class IRI="#Hábito"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoMasticable"/>
+        <Class IRI="#DietaEspecial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noctámbulo"/>
+        <Class IRI="#CicloSueño"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxigenoterapia"/>
+        <Class IRI="#NecesidadMédica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rampa"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residencia"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Residente"/>
         <Class IRI="#Persona"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteFumador"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteFumador"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#asignadoAHabitacion"/>
+            <Class IRI="#HabitacionIndividual"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel1"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel1"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel1"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel2"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel2"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel2"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel3"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel3"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel3"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel4"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel4"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel4"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel5"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel5"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel5"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel6"/>
+        <Class IRI="#Residente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidenteNivel6"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tieneNivelConvivencia"/>
+            <NamedIndividual IRI="#Nivel6"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silencio"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silencioso"/>
+        <Class IRI="#NivelRuido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV"/>
+        <Class IRI="#ZonaComún"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terraza"/>
+        <Class IRI="#ZonaComún"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZonaComún"/>
+        <Class IRI="#Infraestructura"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActividadSocial"/>
+        <Class IRI="#Silencio"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Característica"/>
         <Class IRI="#Infraestructura"/>
         <Class IRI="#Persona"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HabitacionDoble"/>
+        <Class IRI="#HabitacionIndividual"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HabitacionDoble"/>
+        <Class IRI="#ResidenteFumador"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Madrugador"/>
+        <Class IRI="#Noctámbulo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Persona"/>
+        <Class IRI="#Residencia"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelConvivencia"/>
+        <NamedIndividual IRI="#Nivel6"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneGradoDependencia"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneNivelConvivencia"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneGradoDependencia"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneNivelConvivencia"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+        <Class IRI="#Infraestructura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneGradoDependencia"/>
+        <Class IRI="#GradoDependencia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneNivelConvivencia"/>
+        <Class IRI="#NivelConvivencia"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#ayudaCaminar"/>
+        <DataProperty IRI="#usaProductosApoyo"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ayudaCaminar"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ayudaComer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ayudaVestir"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#esFumador"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaInicio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#género"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -73,13 +643,85 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionBarthel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionGds"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionGoldberg"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionMecLobo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionNecpal"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionNorton"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionNpi"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionPfeiffer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#puntuacionTinetti"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#tieneEdad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tienePerdidaMemoria"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#usaPañales"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#usaProductosApoyo"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#usaSillaRuedas"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#viviaSolo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ayudaCaminar"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ayudaComer"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ayudaVestir"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#esFumador"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaInicio"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#género"/>
         <Class IRI="#Persona"/>
@@ -105,6 +747,42 @@
         <Class IRI="#Residente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionBarthel"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionGds"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionGoldberg"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionMecLobo"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionNecpal"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionNorton"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionNpi"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionPfeiffer"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#puntuacionTinetti"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#tieneEdad"/>
         <Class IRI="#Persona"/>
     </DataPropertyDomain>
@@ -113,9 +791,49 @@
         <Class IRI="#Residente"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#tienePerdidaMemoria"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usaPañales"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usaProductosApoyo"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usaSillaRuedas"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#viviaSolo"/>
+        <Class IRI="#Residente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
         <Class IRI="#Residente"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ayudaCaminar"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ayudaComer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ayudaVestir"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#esFumador"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaInicio"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#género"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -133,8 +851,64 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#puntuacionBarthel"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionGds"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionGoldberg"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionMecLobo"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionNecpal"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionNorton"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionNpi"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionPfeiffer"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#puntuacionTinetti"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#tieneEdad"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tienePerdidaMemoria"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usaPañales"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usaProductosApoyo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usaSillaRuedas"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#viviaSolo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
