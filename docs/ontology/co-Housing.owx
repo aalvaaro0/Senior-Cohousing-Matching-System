@@ -66,6 +66,9 @@
         <Class IRI="#Gym"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Habitacion"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HabitacionDoble"/>
     </Declaration>
     <Declaration>
@@ -162,13 +165,58 @@
         <Class IRI="#ZonaComún"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#alojaAResidente"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#asignadoAHabitacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comparteAficionCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comparteDietaCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comparteHabitacionCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compartePreferenciaDeRuidoCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esCompatibleCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esIncompatibleCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#frecuentaZonaComun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#instaladoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneAfinidadMedicaCon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneCicloSueño"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneEquipamiento"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneGradoDependencia"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#tieneMismoCicloSueñoQue"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#tieneNivelConvivencia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneNivelOrden"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toleraNivelRuido"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ayudaCaminar"/>
@@ -260,6 +308,9 @@
     <Declaration>
         <NamedIndividual IRI="#Nivel6"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#ResidenteFumador"/>
         <ObjectIntersectionOf>
@@ -346,12 +397,16 @@
         <Class IRI="#ZonaComún"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HabitacionDoble"/>
+        <Class IRI="#Habitacion"/>
         <Class IRI="#Infraestructura"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HabitacionDoble"/>
+        <Class IRI="#Habitacion"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HabitacionIndividual"/>
-        <Class IRI="#Infraestructura"/>
+        <Class IRI="#Habitacion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hobby"/>
@@ -564,7 +619,55 @@
         <NamedIndividual IRI="#Nivel6"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#alojaAResidente"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#asignadoAHabitacion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#comparteAficionCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#comparteDietaCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#comparteHabitacionCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#compartePreferenciaDeRuidoCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esCompatibleCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esIncompatibleCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#frecuentaZonaComun"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#instaladoEn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneAfinidadMedicaCon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneCicloSueño"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneEquipamiento"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -572,35 +675,207 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneMismoCicloSueñoQue"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneNivelConvivencia"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneNivelOrden"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#toleraNivelRuido"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#alojaAResidente"/>
+        <ObjectProperty IRI="#asignadoAHabitacion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#instaladoEn"/>
+        <ObjectProperty IRI="#tieneEquipamiento"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneCicloSueño"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneNivelOrden"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#toleraNivelRuido"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#alojaAResidente"/>
+    </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#asignadoAHabitacion"/>
     </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#comparteAficionCon"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#comparteHabitacionCon"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#esCompatibleCon"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#esIncompatibleCon"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alojaAResidente"/>
+        <Class IRI="#Habitacion"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#asignadoAHabitacion"/>
         <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparteAficionCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparteDietaCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparteHabitacionCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compartePreferenciaDeRuidoCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esCompatibleCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esIncompatibleCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#frecuentaZonaComun"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#instaladoEn"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneAfinidadMedicaCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneCicloSueño"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneEquipamiento"/>
+        <Class IRI="#Habitacion"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#tieneGradoDependencia"/>
         <Class IRI="#Residente"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneMismoCicloSueñoQue"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#tieneNivelConvivencia"/>
         <Class IRI="#Residente"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneNivelOrden"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#toleraNivelRuido"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#HabitacionDoble"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#HabitacionIndividual"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alojaAResidente"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#asignadoAHabitacion"/>
         <Class IRI="#Infraestructura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparteAficionCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparteDietaCon"/>
+        <Class IRI="#DietaEspecial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparteHabitacionCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compartePreferenciaDeRuidoCon"/>
+        <Class IRI="#NivelRuido"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esCompatibleCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esIncompatibleCon"/>
+        <Class IRI="#Residente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#frecuentaZonaComun"/>
+        <Class IRI="#ZonaComún"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#instaladoEn"/>
+        <Class IRI="#Habitacion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneAfinidadMedicaCon"/>
+        <Class IRI="#NecesidadMédica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneCicloSueño"/>
+        <Class IRI="#CicloSueño"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneEquipamiento"/>
+        <Class IRI="#EquipamientoAccesibilidad"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#tieneGradoDependencia"/>
         <Class IRI="#GradoDependencia"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneMismoCicloSueñoQue"/>
+        <Class IRI="#CicloSueño"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#tieneNivelConvivencia"/>
         <Class IRI="#NivelConvivencia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneNivelOrden"/>
+        <Class IRI="#NivelOrden"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#toleraNivelRuido"/>
+        <Class IRI="#NivelRuido"/>
     </ObjectPropertyRange>
     <EquivalentDataProperties>
         <DataProperty IRI="#ayudaCaminar"/>
@@ -702,6 +977,33 @@
         <DataProperty IRI="#viviaSolo"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionBarthel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionGds"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionGoldberg"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionMecLobo"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionNecpal"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionNorton"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionNpi"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionPfeiffer"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#puntuacionTinetti"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#ayudaCaminar"/>
         <Class IRI="#Residente"/>
@@ -914,6 +1216,100 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Emparejar_Por_Zona_Comun</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Residente"/>
+                <Variable abbreviatedIRI=":r1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Residente"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ZonaComún"/>
+                <Variable abbreviatedIRI=":z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#frecuentaZonaComun"/>
+                <Variable abbreviatedIRI=":r1"/>
+                <Variable abbreviatedIRI=":z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#frecuentaZonaComun"/>
+                <Variable abbreviatedIRI=":r2"/>
+                <Variable abbreviatedIRI=":z"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable abbreviatedIRI=":r1"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#comparteAficionCon"/>
+                <Variable abbreviatedIRI=":r1"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Incompatibilidad_Tabaco</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Residente"/>
+                <Variable abbreviatedIRI=":r1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Residente"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </ClassAtom>
+            <DifferentIndividualsAtom>
+                <Variable abbreviatedIRI=":r1"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </DifferentIndividualsAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#esFumador"/>
+                <Variable abbreviatedIRI=":r1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#esFumador"/>
+                <Variable abbreviatedIRI=":r2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#esIncompatibleCon"/>
+                <Variable abbreviatedIRI=":r1"/>
+                <Variable abbreviatedIRI=":r2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
 </Ontology>
 
 
