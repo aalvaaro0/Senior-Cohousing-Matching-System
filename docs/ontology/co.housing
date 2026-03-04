@@ -1,0 +1,813 @@
+@prefix : <http://www.semanticweb.org/alvar/ontologies/2026/2/untitled-ontology-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alvar/ontologies/2026/2/untitled-ontology-2/> .
+
+<http://tfg.upm.es/alvaro/cohousing-senior> rdf:type owl:Ontology ;
+                                             owl:versionIRI <http://purl.org/vivienda/cohousing-senior> ;
+                                             rdfs:comment "Filtro para buscar la mejor convivencia posible entre personas mayores" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#alojaAResidente
+:alojaAResidente rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 owl:inverseOf :asignadoAHabitacion ;
+                 rdf:type owl:SymmetricProperty ;
+                 rdfs:domain :Habitacion ;
+                 rdfs:range :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#asignadoAHabitacion
+:asignadoAHabitacion rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:SymmetricProperty ;
+                     rdfs:domain :Residente ;
+                     rdfs:range :Infraestructura .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#comparteAficionCon
+:comparteAficionCon rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:SymmetricProperty ;
+                    rdfs:domain :Residente ;
+                    rdfs:range :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#comparteDietaCon
+:comparteDietaCon rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Residente ;
+                  rdfs:range :DietaEspecial .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#comparteHabitacionCon
+:comparteHabitacionCon rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:SymmetricProperty ;
+                       rdfs:domain :Residente ;
+                       rdfs:range :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#compartePreferenciaDeRuidoCon
+:compartePreferenciaDeRuidoCon rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain :Residente ;
+                               rdfs:range :NivelRuido .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#esCompatibleCon
+:esCompatibleCon rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:SymmetricProperty ;
+                 rdfs:domain :Residente ;
+                 rdfs:range :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#esIncompatibleCon
+:esIncompatibleCon rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdf:type owl:SymmetricProperty ;
+                   rdfs:domain :Residente ;
+                   rdfs:range :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#frecuentaZonaComun
+:frecuentaZonaComun rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :Residente ;
+                    rdfs:range :ZonaComún .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#instaladoEn
+:instaladoEn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :tieneEquipamiento ;
+             rdfs:domain :EquipamientoAccesibilidad ;
+             rdfs:range :Habitacion .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneAfinidadMedicaCon
+:tieneAfinidadMedicaCon rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :Residente ;
+                        rdfs:range :NecesidadMédica .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneCicloSueño
+:tieneCicloSueño rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Residente ;
+                 rdfs:range :CicloSueño .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneEquipamiento
+:tieneEquipamiento rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :Habitacion ;
+                   rdfs:range :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneGradoDependencia
+:tieneGradoDependencia rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Residente ;
+                       rdfs:range :GradoDependencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneMismoCicloSueñoQue
+:tieneMismoCicloSueñoQue rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :Residente ;
+                         rdfs:range :CicloSueño .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneNivelConvivencia
+:tieneNivelConvivencia rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Residente ;
+                       rdfs:range :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneNivelOrden
+:tieneNivelOrden rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Residente ;
+                 rdfs:range :NivelOrden .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#toleraNivelRuido
+:toleraNivelRuido rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Residente ;
+                  rdfs:range :NivelRuido .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :HabitacionDoble ,
+                                  :HabitacionIndividual .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ayudaCaminar
+:ayudaCaminar rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty :usaProductosApoyo ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Residente ;
+              rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ayudaComer
+:ayudaComer rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Residente ;
+            rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ayudaVestir
+:ayudaVestir rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Residente ;
+             rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#esFumador
+:esFumador rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Residente ;
+           rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#fechaInicio
+:fechaInicio rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Residente ;
+             rdfs:range xsd:dateTime .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#género
+:género rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Persona ,
+                    :Residente ;
+        rdfs:range xsd:string .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#necesitaAsistenciaNocturna
+:necesitaAsistenciaNocturna rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain :Residente ;
+                            rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#nivelDependencia
+:nivelDependencia rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Residente ;
+                  rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Persona ,
+                    :Residente ;
+        rdfs:range xsd:string .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionBarthel
+:puntuacionBarthel rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Residente ;
+                   rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionGds
+:puntuacionGds rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :Residente ;
+               rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionGoldberg
+:puntuacionGoldberg rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Residente ;
+                    rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionMecLobo
+:puntuacionMecLobo rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Residente ;
+                   rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionNecpal
+:puntuacionNecpal rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Residente ;
+                  rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionNorton
+:puntuacionNorton rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Residente ;
+                  rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionNpi
+:puntuacionNpi rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :Residente ;
+               rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionPfeiffer
+:puntuacionPfeiffer rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Residente ;
+                    rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#puntuacionTinetti
+:puntuacionTinetti rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Residente ;
+                   rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneEdad
+:tieneEdad rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Persona ,
+                       :Residente ;
+           rdfs:range xsd:integer .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tienePerdidaMemoria
+:tienePerdidaMemoria rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Residente ;
+                     rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#usaPañales
+:usaPañales rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Residente ;
+            rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#usaProductosApoyo
+:usaProductosApoyo rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Residente ;
+                   rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#usaSillaRuedas
+:usaSillaRuedas rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Residente ;
+                rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#viviaSolo
+:viviaSolo rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Residente ;
+           rdfs:range xsd:boolean .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain :Residente ;
+                    rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ActividadFísica
+:ActividadFísica rdf:type owl:Class ;
+                 rdfs:subClassOf :Hobby .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ActividadSocial
+:ActividadSocial rdf:type owl:Class ;
+                 rdfs:subClassOf :NivelRuido ;
+                 owl:disjointWith :Silencio .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Ascensor
+:Ascensor rdf:type owl:Class ;
+          rdfs:subClassOf :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#BajoEnSal
+:BajoEnSal rdf:type owl:Class ;
+           rdfs:subClassOf :DietaEspecial .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#BarraApoyo
+:BarraApoyo rdf:type owl:Class ;
+            rdfs:subClassOf :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#BañoAdaptado
+:BañoAdaptado rdf:type owl:Class ;
+              rdfs:subClassOf :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Biblioteca
+:Biblioteca rdf:type owl:Class ;
+            rdfs:subClassOf :ZonaComún .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Característica
+:Característica rdf:type owl:Class .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Celíaco
+:Celíaco rdf:type owl:Class ;
+         rdfs:subClassOf :DietaEspecial .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#CicloSueño
+:CicloSueño rdf:type owl:Class ;
+            rdfs:subClassOf :Hábito .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ControlInsulina
+:ControlInsulina rdf:type owl:Class ;
+                 rdfs:subClassOf :NecesidadMédica .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Diabético
+:Diabético rdf:type owl:Class ;
+           rdfs:subClassOf :DietaEspecial .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#DietaEspecial
+:DietaEspecial rdf:type owl:Class ;
+               rdfs:subClassOf :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#EquipamientoAccesibilidad
+:EquipamientoAccesibilidad rdf:type owl:Class ;
+                           rdfs:subClassOf :Infraestructura .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#GradoDependencia
+:GradoDependencia rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Gym
+:Gym rdf:type owl:Class ;
+     rdfs:subClassOf :ZonaComún .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Habitacion
+:Habitacion rdf:type owl:Class ;
+            rdfs:subClassOf :Infraestructura .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#HabitacionDoble
+:HabitacionDoble rdf:type owl:Class ;
+                 rdfs:subClassOf :Habitacion ;
+                 owl:disjointWith :HabitacionIndividual ,
+                                  :ResidenteFumador .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#HabitacionIndividual
+:HabitacionIndividual rdf:type owl:Class ;
+                      rdfs:subClassOf :Habitacion .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Hobby
+:Hobby rdf:type owl:Class ;
+       rdfs:subClassOf :Característica .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Hábito
+:Hábito rdf:type owl:Class ;
+        rdfs:subClassOf :Característica .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Infraestructura
+:Infraestructura rdf:type owl:Class .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Jardinería
+:Jardinería rdf:type owl:Class ;
+            rdfs:subClassOf :Hobby .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#JuegosMesa
+:JuegosMesa rdf:type owl:Class ;
+            rdfs:subClassOf :Hobby .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Lectura
+:Lectura rdf:type owl:Class ;
+         rdfs:subClassOf :Hobby .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Madrugador
+:Madrugador rdf:type owl:Class ;
+            rdfs:subClassOf :CicloSueño ;
+            owl:disjointWith :Noctámbulo .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#NecesidadMédica
+:NecesidadMédica rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#NivelConvivencia
+:NivelConvivencia rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#NivelOrden
+:NivelOrden rdf:type owl:Class ;
+            rdfs:subClassOf :Hábito .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#NivelRuido
+:NivelRuido rdf:type owl:Class ;
+            rdfs:subClassOf :Hábito .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#NoMasticable
+:NoMasticable rdf:type owl:Class ;
+              rdfs:subClassOf :DietaEspecial .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Noctámbulo
+:Noctámbulo rdf:type owl:Class ;
+            rdfs:subClassOf :CicloSueño .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Oxigenoterapia
+:Oxigenoterapia rdf:type owl:Class ;
+                rdfs:subClassOf :NecesidadMédica .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Persona
+:Persona rdf:type owl:Class ;
+         owl:disjointWith :Residencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Rampa
+:Rampa rdf:type owl:Class ;
+       rdfs:subClassOf :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Residencia
+:Residencia rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Residente
+:Residente rdf:type owl:Class ;
+           rdfs:subClassOf :Persona .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteFumador
+:ResidenteFumador rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Residente
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :esFumador ;
+                                                               owl:hasValue "true"^^xsd:boolean
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Residente ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :asignadoAHabitacion ;
+                                    owl:allValuesFrom :HabitacionIndividual
+                                  ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel1
+:ResidenteNivel1 rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Residente
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :puntuacionNpi ;
+                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:integer ;
+                                                                                   owl:withRestrictions ( [ xsd:minInclusive 4
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel1
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel2
+:ResidenteNivel2 rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel2
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel3
+:ResidenteNivel3 rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel3
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel4
+:ResidenteNivel4 rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel4
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel5
+:ResidenteNivel5 rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel5
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel6
+:ResidenteNivel6 rdf:type owl:Class ;
+                 rdfs:subClassOf :Residente ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tieneNivelConvivencia ;
+                                   owl:hasValue :Nivel6
+                                 ] .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Silencio
+:Silencio rdf:type owl:Class ;
+          rdfs:subClassOf :Hobby .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Silencioso
+:Silencioso rdf:type owl:Class ;
+            rdfs:subClassOf :NivelRuido .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#TV
+:TV rdf:type owl:Class ;
+    rdfs:subClassOf :ZonaComún .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Terraza
+:Terraza rdf:type owl:Class ;
+         rdfs:subClassOf :ZonaComún .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#ZonaComún
+:ZonaComún rdf:type owl:Class ;
+           rdfs:subClassOf :Infraestructura .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel1
+:Nivel1 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel2
+:Nivel2 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel3
+:Nivel3 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel4
+:Nivel4 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel5
+:Nivel5 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel6
+:Nivel6 rdf:type owl:NamedIndividual ,
+                 :NivelConvivencia .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Característica
+                :Infraestructura
+                :Persona
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:r1 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:r2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Emparejar_Por_Zona_Comun" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ZonaComún ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :z
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :frecuentaZonaComun ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :frecuentaZonaComun ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :r2 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :comparteAficionCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Incompatibilidad_Tabaco" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :esFumador ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :esFumador ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :r2 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :esIncompatibleCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
