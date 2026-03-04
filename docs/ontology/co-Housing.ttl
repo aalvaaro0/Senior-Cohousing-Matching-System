@@ -22,6 +22,13 @@
 #    Object Properties
 #################################################################
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#aceptaCompañeroDeSexo
+:aceptaCompañeroDeSexo rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:range :Sexo .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#alojaAResidente
 :alojaAResidente rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
@@ -86,6 +93,14 @@
                    rdfs:range :Residente .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#estaCasadoCon
+:estaCasadoCon rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:SymmetricProperty ;
+               rdfs:domain :Residente ;
+               rdfs:range :Residente .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#frecuentaZonaComun
 :frecuentaZonaComun rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
@@ -99,6 +114,13 @@
              owl:inverseOf :tieneEquipamiento ;
              rdfs:domain :EquipamientoAccesibilidad ;
              rdfs:range :Habitacion .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#leGustaMascota
+:leGustaMascota rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Residente ;
+                rdfs:range :AfinidadMascotas .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#tieneAfinidadMedicaCon
@@ -121,6 +143,13 @@
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:domain :Habitacion ;
                    rdfs:range :EquipamientoAccesibilidad .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneGenero
+:tieneGenero rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Residente ;
+             rdfs:range :Sexo .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#tieneGradoDependencia
@@ -148,8 +177,7 @@
 :tieneNivelOrden rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdf:type owl:FunctionalProperty ;
-                 rdfs:domain :Residente ;
-                 rdfs:range :NivelOrden .
+                 rdfs:domain :Residente .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#toleraNivelRuido
@@ -302,6 +330,20 @@
                    rdfs:range xsd:integer .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#quiereHabitacionCompartida
+:quiereHabitacionCompartida rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain :Residente ;
+                            rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#recibeVisitasFrecuentes
+:recibeVisitasFrecuentes rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :Residente ;
+                         rdfs:range xsd:boolean .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#tieneEdad
 :tieneEdad rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
@@ -310,11 +352,25 @@
            rdfs:range xsd:integer .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#tieneMascota
+:tieneMascota rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Residente ;
+              rdfs:range xsd:boolean .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#tienePerdidaMemoria
 :tienePerdidaMemoria rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :Residente ;
                      rdfs:range xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#toleraMascotas
+:toleraMascotas rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Residente ;
+                rdfs:range xsd:boolean .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#usaPañales
@@ -363,6 +419,11 @@ owl:topDataProperty rdfs:domain :Residente ;
 :ActividadSocial rdf:type owl:Class ;
                  rdfs:subClassOf :NivelRuido ;
                  owl:disjointWith :Silencio .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#AfinidadMascotas
+:AfinidadMascotas rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Ascensor
@@ -422,6 +483,11 @@ owl:topDataProperty rdfs:domain :Residente ;
 ###  http://tfg.upm.es/alvaro/cohousing-senior#EquipamientoAccesibilidad
 :EquipamientoAccesibilidad rdf:type owl:Class ;
                            rdfs:subClassOf :Infraestructura .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Gato
+:Gato rdf:type owl:Class ;
+      rdfs:subClassOf :AfinidadMascotas .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#GradoDependencia
@@ -491,14 +557,14 @@ owl:topDataProperty rdfs:domain :Residente ;
                  rdfs:subClassOf :Residente .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#Ninguna
+:Ninguna rdf:type owl:Class ;
+         rdfs:subClassOf :AfinidadMascotas .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#NivelConvivencia
 :NivelConvivencia rdf:type owl:Class ;
                   rdfs:subClassOf owl:Thing .
-
-
-###  http://tfg.upm.es/alvaro/cohousing-senior#NivelOrden
-:NivelOrden rdf:type owl:Class ;
-            rdfs:subClassOf :Hábito .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#NivelRuido
@@ -521,19 +587,18 @@ owl:topDataProperty rdfs:domain :Residente ;
                 rdfs:subClassOf :NecesidadMédica .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#Perro
+:Perro rdf:type owl:Class ;
+       rdfs:subClassOf :AfinidadMascotas .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Persona
-:Persona rdf:type owl:Class ;
-         owl:disjointWith :Residencia .
+:Persona rdf:type owl:Class .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Rampa
 :Rampa rdf:type owl:Class ;
        rdfs:subClassOf :EquipamientoAccesibilidad .
-
-
-###  http://tfg.upm.es/alvaro/cohousing-senior#Residencia
-:Residencia rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
 
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Residente
@@ -560,19 +625,6 @@ owl:topDataProperty rdfs:domain :Residente ;
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#ResidenteNivel1
 :ResidenteNivel1 rdf:type owl:Class ;
-                 owl:equivalentClass [ owl:intersectionOf ( :Residente
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty :puntuacionNpi ;
-                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                   owl:onDatatype xsd:integer ;
-                                                                                   owl:withRestrictions ( [ xsd:minInclusive 4
-                                                                                                          ]
-                                                                                                        )
-                                                                                 ]
-                                                            ]
-                                                          ) ;
-                                       rdf:type owl:Class
-                                     ] ;
                  rdfs:subClassOf :Residente ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :tieneNivelConvivencia ;
@@ -625,6 +677,11 @@ owl:topDataProperty rdfs:domain :Residente ;
                                  ] .
 
 
+###  http://tfg.upm.es/alvaro/cohousing-senior#Sexo
+:Sexo rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Silencio
 :Silencio rdf:type owl:Class ;
           rdfs:subClassOf :Hobby .
@@ -653,6 +710,41 @@ owl:topDataProperty rdfs:domain :Residente ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Alvaro
+:Alvaro rdf:type owl:NamedIndividual ,
+                 :Residente ;
+        :esFumador "false"^^xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Biblio_Principal
+:Biblio_Principal rdf:type owl:NamedIndividual ,
+                           :Biblioteca .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Eva
+:Eva rdf:type owl:NamedIndividual ,
+              :Residente ;
+     :frecuentaZonaComun :Biblio_Principal ;
+     :esFumador "true"^^xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Hombre
+:Hombre rdf:type owl:NamedIndividual ,
+                 :Sexo .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Juan
+:Juan rdf:type owl:NamedIndividual ,
+               :Residente ;
+      :frecuentaZonaComun :Biblio_Principal ;
+      :esFumador "true"^^xsd:boolean .
+
+
+###  http://tfg.upm.es/alvaro/cohousing-senior#Mujer
+:Mujer rdf:type owl:NamedIndividual ,
+                :Sexo .
+
 
 ###  http://tfg.upm.es/alvaro/cohousing-senior#Nivel1
 :Nivel1 rdf:type owl:NamedIndividual ,
@@ -696,6 +788,14 @@ owl:topDataProperty rdfs:domain :Residente ;
 ] .
 
 
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Alvaro
+                        :Eva
+                        :Juan
+                      )
+] .
+
+
 #################################################################
 #    Rules
 #################################################################
@@ -704,7 +804,62 @@ owl:topDataProperty rdfs:domain :Residente ;
 
 :r2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
+:m rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
 :z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Gusta_Mascota" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :AfinidadMascotas ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :m
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :leGustaMascota ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :m
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :leGustaMascota ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :r2 ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :m
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :comparteAficionCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "" ;
@@ -761,6 +916,74 @@ owl:topDataProperty rdfs:domain :Residente ;
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "" ;
+   rdfs:label "Esta_Casado" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :estaCasadoCon ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :comparteHabitacionCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Forzar_Emparejamiento" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :estaCasadoCon ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :esCompatibleCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
    rdfs:label "Incompatibilidad_Tabaco" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -787,6 +1010,53 @@ owl:topDataProperty rdfs:domain :Residente ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :esFumador ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :r2 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :esIncompatibleCon ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "No_Mascotas" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r1
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Residente ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r2
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :r2
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :tieneMascota ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :r1 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :toleraMascotas ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :r2 ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
                                                                                                  ] ;
