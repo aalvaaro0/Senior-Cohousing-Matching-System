@@ -1,0 +1,459 @@
+﻿Prioridad,Código,Nombre,Nivel Convivencia,Alerta,Acción Recomendada,Barthel,GDS,Goldberg,MEC-Lobo,Norton,Tinetti,Pfeiffer,NPI,NECPAL
+P1 · Crítica,QWD3129,Andrés,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,49,0,3,12,11,22,5,0,1
+P1 · Crítica,RQX1211,Andrés,N2 · Dep.Total,Dependencia total (Barthel=11),Cuidados de enfermería intensivos 24 h,11,14,1,9,17,1,9,1,0
+P1 · Crítica,BMW7812,Antonio,N1 · Alt.Conducta,Trastorno conductual grave (NPI=7),Evaluación psiquiátrica urgente; vigilancia continua,98,0,6,7,12,10,6,7,1
+P1 · Crítica,BMW7812,Antonio,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,98,0,6,7,12,10,6,7,1
+P1 · Crítica,DXB2434,Antonio,N1 · Alt.Conducta,Trastorno conductual grave (NPI=6),Evaluación psiquiátrica urgente; vigilancia continua,74,5,1,8,14,12,3,6,0
+P1 · Crítica,WYV0966,Antonio,N1 · Alt.Conducta,Trastorno conductual grave (NPI=7),Evaluación psiquiátrica urgente; vigilancia continua,3,2,4,11,11,23,0,7,1
+P1 · Crítica,WYV0966,Antonio,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,3,2,4,11,11,23,0,7,1
+P1 · Crítica,WYV0966,Antonio,N1 · Alt.Conducta,Dependencia total (Barthel=3),Cuidados de enfermería intensivos 24 h,3,2,4,11,11,23,0,7,1
+P1 · Crítica,YYU9565,Antonio,N1 · Alt.Conducta,Trastorno conductual grave (NPI=9),Evaluación psiquiátrica urgente; vigilancia continua,91,3,5,15,14,28,9,9,1
+P1 · Crítica,YYU9565,Antonio,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,91,3,5,15,14,28,9,9,1
+P1 · Crítica,ZOO7941,Antonio,N1 · Alt.Conducta,Trastorno conductual grave (NPI=4),Evaluación psiquiátrica urgente; vigilancia continua,45,14,8,14,5,18,8,4,0
+P1 · Crítica,IUJ5442,Carlos,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,54,4,6,11,18,0,6,2,1
+P1 · Crítica,JDP9221,Carlos,N2 · Dep.Total,Dependencia total (Barthel=6),Cuidados de enfermería intensivos 24 h,6,11,1,6,16,2,10,2,0
+P1 · Crítica,MSW4208,Carlos,N2 · Dep.Total,Dependencia total (Barthel=8),Cuidados de enfermería intensivos 24 h,8,7,7,7,20,10,9,3,0
+P1 · Crítica,XXM0972,Carlos,N1 · Alt.Conducta,Trastorno conductual grave (NPI=5),Evaluación psiquiátrica urgente; vigilancia continua,95,0,6,17,16,0,9,5,0
+P1 · Crítica,FLG2019,Carmen,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,30,12,7,12,8,10,6,0,1
+P1 · Crítica,BOK4939,Elena,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,98,11,8,8,19,11,2,1,1
+P1 · Crítica,DCY3282,Elena,N1 · Alt.Conducta,Trastorno conductual grave (NPI=12),Evaluación psiquiátrica urgente; vigilancia continua,86,4,5,8,15,9,10,12,0
+P1 · Crítica,RRG8947,Elena,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,45,0,5,11,16,18,7,2,1
+P1 · Crítica,BFE4900,Eva,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,51,11,9,11,16,6,7,3,1
+P1 · Crítica,ICO9779,Eva,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,99,14,9,9,8,16,7,1,1
+P1 · Crítica,RDI3071,Eva,N2 · Dep.Total,Dependencia total (Barthel=15),Cuidados de enfermería intensivos 24 h,15,7,0,9,16,1,10,1,0
+P1 · Crítica,SCZ5893,Eva,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,52,11,8,11,18,20,6,3,1
+P1 · Crítica,TTO9115,Javier,N2 · Dep.Total,Dependencia total (Barthel=14),Cuidados de enfermería intensivos 24 h,14,1,4,5,19,7,10,0,0
+P1 · Crítica,XRL5497,Javier,N2 · Dep.Total,Dependencia total (Barthel=7),Cuidados de enfermería intensivos 24 h,7,11,4,8,5,8,10,0,0
+P1 · Crítica,DWN2141,Juan,N2 · Dep.Total,Dependencia total (Barthel=18),Cuidados de enfermería intensivos 24 h,18,10,9,7,6,9,9,2,0
+P1 · Crítica,FTJ5456,Juan,N1 · Alt.Conducta,Trastorno conductual grave (NPI=11),Evaluación psiquiátrica urgente; vigilancia continua,38,0,0,14,13,9,7,11,1
+P1 · Crítica,FTJ5456,Juan,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,38,0,0,14,13,9,7,11,1
+P1 · Crítica,BNI9906,Lola,N1 · Alt.Conducta,Trastorno conductual grave (NPI=8),Evaluación psiquiátrica urgente; vigilancia continua,73,15,2,18,14,0,5,8,1
+P1 · Crítica,BNI9906,Lola,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,73,15,2,18,14,0,5,8,1
+P1 · Crítica,DDG3686,Lola,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,32,4,6,11,20,4,7,1,1
+P1 · Crítica,ENK3334,Lola,N2 · Dep.Total,Dependencia total (Barthel=1),Cuidados de enfermería intensivos 24 h,1,11,8,5,10,4,10,3,0
+P1 · Crítica,FPS0415,Lola,N1 · Alt.Conducta,Trastorno conductual grave (NPI=6),Evaluación psiquiátrica urgente; vigilancia continua,17,3,8,15,20,5,10,6,1
+P1 · Crítica,FPS0415,Lola,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,17,3,8,15,20,5,10,6,1
+P1 · Crítica,FPS0415,Lola,N1 · Alt.Conducta,Dependencia total (Barthel=17),Cuidados de enfermería intensivos 24 h,17,3,8,15,20,5,10,6,1
+P1 · Crítica,JPD8131,Lola,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,96,10,5,7,15,24,10,2,1
+P1 · Crítica,UBJ2564,Lola,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,21,6,9,12,11,3,6,2,1
+P1 · Crítica,UYU5044,Lola,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,52,4,2,11,17,26,6,1,1
+P1 · Crítica,XCQ5937,Lola,N1 · Alt.Conducta,Trastorno conductual grave (NPI=10),Evaluación psiquiátrica urgente; vigilancia continua,23,4,7,13,12,20,0,10,1
+P1 · Crítica,XCQ5937,Lola,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,23,4,7,13,12,20,0,10,1
+P1 · Crítica,BSV5917,Lucía,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,56,0,2,10,9,27,7,1,1
+P1 · Crítica,ENZ9640,Lucía,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,25,3,7,11,16,25,6,2,1
+P1 · Crítica,LBY7992,Lucía,N2 · Dep.Total,Dependencia total (Barthel=8),Cuidados de enfermería intensivos 24 h,8,5,9,6,19,7,8,1,0
+P1 · Crítica,MBI0008,Manolo,N2 · Dep.Total,Dependencia total (Barthel=15),Cuidados de enfermería intensivos 24 h,15,7,2,7,20,0,10,3,0
+P1 · Crítica,DHP4080,María,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,94,15,7,20,8,15,10,3,1
+P1 · Crítica,DNY3115,María,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,95,8,7,18,7,27,3,1,1
+P1 · Crítica,GNK9443,María,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,21,2,8,10,7,27,5,0,1
+P1 · Crítica,SLE3369,María,N2 · Dep.Total,Dependencia total (Barthel=4),Cuidados de enfermería intensivos 24 h,4,4,0,7,19,1,10,3,0
+P1 · Crítica,VTW9069,María,N1 · Alt.Conducta,Trastorno conductual grave (NPI=9),Evaluación psiquiátrica urgente; vigilancia continua,26,11,8,8,11,13,7,9,0
+P1 · Crítica,NXO4034,Miguel,N2 · Dep.Total,Dependencia total (Barthel=14),Cuidados de enfermería intensivos 24 h,14,2,3,8,9,4,9,2,0
+P1 · Crítica,YSP0073,Miguel,N1 · Alt.Conducta,Trastorno conductual grave (NPI=9),Evaluación psiquiátrica urgente; vigilancia continua,85,11,2,18,11,19,7,9,0
+P1 · Crítica,COP0566,Paco,N2 · Dep.Total,Dependencia total (Barthel=6),Cuidados de enfermería intensivos 24 h,6,0,5,7,10,5,9,0,0
+P1 · Crítica,RHR1854,Paco,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,99,10,9,7,6,17,4,0,1
+P1 · Crítica,XBP3543,Paco,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,43,12,5,12,5,20,5,2,1
+P1 · Crítica,DUX2118,Pedro,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,38,5,7,10,18,28,7,1,1
+P1 · Crítica,NHX8643,Pedro,N4 · Dep.Moderada,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,97,8,6,20,15,2,0,2,1
+P1 · Crítica,RVN4963,Pedro,N2 · Dep.Total,Dependencia total (Barthel=5),Cuidados de enfermería intensivos 24 h,5,12,6,6,7,7,8,0,0
+P1 · Crítica,TTM1692,Pedro,N2 · Dep.Total,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,40,9,1,10,17,5,5,1,1
+P1 · Crítica,XBI0592,Pedro,N2 · Dep.Total,Dependencia total (Barthel=12),Cuidados de enfermería intensivos 24 h,12,10,3,6,14,8,10,0,0
+P1 · Crítica,FFF6730,Raquel,N2 · Dep.Total,Dependencia total (Barthel=14),Cuidados de enfermería intensivos 24 h,14,3,0,8,14,1,9,1,0
+P1 · Crítica,QJA1796,Raquel,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,93,15,6,12,10,16,1,1,1
+P1 · Crítica,WMP6003,Raquel,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,99,11,4,13,12,22,10,3,1
+P1 · Crítica,CZE1114,Rosa,N1 · Alt.Conducta,Trastorno conductual grave (NPI=6),Evaluación psiquiátrica urgente; vigilancia continua,35,10,3,18,7,10,5,6,0
+P1 · Crítica,JLN3497,Rosa,N1 · Alt.Conducta,Trastorno conductual grave (NPI=9),Evaluación psiquiátrica urgente; vigilancia continua,46,10,1,19,17,19,4,9,0
+P1 · Crítica,NCU1956,Rosa,N2 · Dep.Total,Dependencia total (Barthel=0),Cuidados de enfermería intensivos 24 h,0,14,8,9,10,0,10,2,0
+P1 · Crítica,SOH9843,Rosa,N5 · Dep.Leve,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,92,14,4,6,6,11,2,3,1
+P1 · Crítica,DRT6328,Sofía,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,46,14,4,10,6,24,5,1,1
+P1 · Crítica,GFO8847,Sofía,N1 · Alt.Conducta,Trastorno conductual grave (NPI=7),Evaluación psiquiátrica urgente; vigilancia continua,58,1,9,11,11,14,4,7,1
+P1 · Crítica,GFO8847,Sofía,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,58,1,9,11,11,14,4,7,1
+P1 · Crítica,HSD6283,Sofía,N1 · Alt.Conducta,Trastorno conductual grave (NPI=8),Evaluación psiquiátrica urgente; vigilancia continua,41,9,0,8,12,4,4,8,1
+P1 · Crítica,HSD6283,Sofía,N1 · Alt.Conducta,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,41,9,0,8,12,4,4,8,1
+P1 · Crítica,SQE3213,Sofía,N3 · Dep.Severa,NECPAL positivo — pronóstico de vida limitado,Plan de cuidados paliativos individualizado,60,4,6,12,11,25,5,3,1
+P2 · Alta,QWD3129,Andrés,N3 · Dep.Severa,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,49,0,3,12,11,22,5,0,1
+P2 · Alta,QWD3129,Andrés,N3 · Dep.Severa,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,49,0,3,12,11,22,5,0,1
+P2 · Alta,RQX1211,Andrés,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=1),"Barras de apoyo, cama articulada, fisioterapia prioritaria",11,14,1,9,17,1,9,1,0
+P2 · Alta,RQX1211,Andrés,N2 · Dep.Total,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,11,14,1,9,17,1,9,1,0
+P2 · Alta,RQX1211,Andrés,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=9),Estimulación cognitiva intensiva; supervisión constante,11,14,1,9,17,1,9,1,0
+P2 · Alta,BMW7812,Antonio,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,98,0,6,7,12,10,6,7,1
+P2 · Alta,BMW7812,Antonio,N1 · Alt.Conducta,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,98,0,6,7,12,10,6,7,1
+P2 · Alta,BMW7812,Antonio,N1 · Alt.Conducta,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,98,0,6,7,12,10,6,7,1
+P2 · Alta,DXB2434,Antonio,N1 · Alt.Conducta,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,74,5,1,8,14,12,3,6,0
+P2 · Alta,SLJ3300,Antonio,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,100,4,3,18,6,26,0,0,0
+P2 · Alta,SLJ3300,Antonio,N6 · Independiente,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,100,4,3,18,6,26,0,0,0
+P2 · Alta,SLJ3300,Antonio,N6 · Independiente,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,100,4,3,18,6,26,0,0,0
+P2 · Alta,UIW1798,Antonio,N6 · Independiente,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,100,3,3,14,17,27,0,0,0
+P2 · Alta,WYV0966,Antonio,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,3,2,4,11,11,23,0,7,1
+P2 · Alta,WYV0966,Antonio,N1 · Alt.Conducta,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,3,2,4,11,11,23,0,7,1
+P2 · Alta,YYU9565,Antonio,N1 · Alt.Conducta,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,91,3,5,15,14,28,9,9,1
+P2 · Alta,ZOO7941,Antonio,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=5),Protocolo de cambios posturales; colchón antiescaras,45,14,8,14,5,18,8,4,0
+P2 · Alta,ZOO7941,Antonio,N1 · Alt.Conducta,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,45,14,8,14,5,18,8,4,0
+P2 · Alta,ZOO7941,Antonio,N1 · Alt.Conducta,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,45,14,8,14,5,18,8,4,0
+P2 · Alta,ZOO7941,Antonio,N1 · Alt.Conducta,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,45,14,8,14,5,18,8,4,0
+P2 · Alta,GDY0435,Carlos,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=9),Protocolo de cambios posturales; colchón antiescaras,97,9,7,20,9,26,2,3,0
+P2 · Alta,IUJ5442,Carlos,N3 · Dep.Severa,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",54,4,6,11,18,0,6,2,1
+P2 · Alta,JDP9221,Carlos,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=2),"Barras de apoyo, cama articulada, fisioterapia prioritaria",6,11,1,6,16,2,10,2,0
+P2 · Alta,JDP9221,Carlos,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=6),Estimulación cognitiva intensiva; supervisión constante,6,11,1,6,16,2,10,2,0
+P2 · Alta,KTR4778,Carlos,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,71,5,9,17,8,8,1,3,0
+P2 · Alta,KTR4778,Carlos,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=8),"Barras de apoyo, cama articulada, fisioterapia prioritaria",71,5,9,17,8,8,1,3,0
+P2 · Alta,MSW4208,Carlos,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,8,7,7,7,20,10,9,3,0
+P2 · Alta,XXM0972,Carlos,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",95,0,6,17,16,0,9,5,0
+P2 · Alta,XXM0972,Carlos,N1 · Alt.Conducta,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,95,0,6,17,16,0,9,5,0
+P2 · Alta,XXM0972,Carlos,N1 · Alt.Conducta,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,95,0,6,17,16,0,9,5,0
+P2 · Alta,FLG2019,Carmen,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,30,12,7,12,8,10,6,0,1
+P2 · Alta,FLG2019,Carmen,N2 · Dep.Total,Depresión grave (GDS=12),Derivación a psicología/psiquiatría; reevaluación mensual,30,12,7,12,8,10,6,0,1
+P2 · Alta,FLG2019,Carmen,N2 · Dep.Total,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,30,12,7,12,8,10,6,0,1
+P2 · Alta,GMI1141,Carmen,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=5),Protocolo de cambios posturales; colchón antiescaras,95,6,7,17,5,6,8,3,0
+P2 · Alta,GMI1141,Carmen,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=6),"Barras de apoyo, cama articulada, fisioterapia prioritaria",95,6,7,17,5,6,8,3,0
+P2 · Alta,GMI1141,Carmen,N4 · Dep.Moderada,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,95,6,7,17,5,6,8,3,0
+P2 · Alta,AYY8711,Elena,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,68,11,6,13,10,10,4,1,0
+P2 · Alta,AYY8711,Elena,N5 · Dep.Leve,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,68,11,6,13,10,10,4,1,0
+P2 · Alta,BOK4939,Elena,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,98,11,8,8,19,11,2,1,1
+P2 · Alta,DCY3282,Elena,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=9),"Barras de apoyo, cama articulada, fisioterapia prioritaria",86,4,5,8,15,9,10,12,0
+P2 · Alta,DCY3282,Elena,N1 · Alt.Conducta,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,86,4,5,8,15,9,10,12,0
+P2 · Alta,BFE4900,Eva,N3 · Dep.Severa,Alto riesgo de caídas (Tinetti=6),"Barras de apoyo, cama articulada, fisioterapia prioritaria",51,11,9,11,16,6,7,3,1
+P2 · Alta,ICO9779,Eva,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,99,14,9,9,8,16,7,1,1
+P2 · Alta,ICO9779,Eva,N5 · Dep.Leve,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,99,14,9,9,8,16,7,1,1
+P2 · Alta,ICO9779,Eva,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=9),Estimulación cognitiva intensiva; supervisión constante,99,14,9,9,8,16,7,1,1
+P2 · Alta,ICO9779,Eva,N5 · Dep.Leve,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,99,14,9,9,8,16,7,1,1
+P2 · Alta,ICO9779,Eva,N5 · Dep.Leve,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,99,14,9,9,8,16,7,1,1
+P2 · Alta,RDI3071,Eva,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=1),"Barras de apoyo, cama articulada, fisioterapia prioritaria",15,7,0,9,16,1,10,1,0
+P2 · Alta,RDI3071,Eva,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=9),Estimulación cognitiva intensiva; supervisión constante,15,7,0,9,16,1,10,1,0
+P2 · Alta,TQT8266,Eva,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",71,10,8,13,19,0,2,2,0
+P2 · Alta,TQT8266,Eva,N4 · Dep.Moderada,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,71,10,8,13,19,0,2,2,0
+P2 · Alta,TQT8266,Eva,N4 · Dep.Moderada,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,71,10,8,13,19,0,2,2,0
+P2 · Alta,BBJ3290,Javier,N5 · Dep.Leve,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,62,8,0,19,14,11,0,1,0
+P2 · Alta,BDG2694,Javier,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,83,8,3,16,8,16,3,2,0
+P2 · Alta,BDG2694,Javier,N5 · Dep.Leve,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,83,8,3,16,8,16,3,2,0
+P2 · Alta,TTO9115,Javier,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=7),"Barras de apoyo, cama articulada, fisioterapia prioritaria",14,1,4,5,19,7,10,0,0
+P2 · Alta,TTO9115,Javier,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=5),Estimulación cognitiva intensiva; supervisión constante,14,1,4,5,19,7,10,0,0
+P2 · Alta,XRL5497,Javier,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=5),Protocolo de cambios posturales; colchón antiescaras,7,11,4,8,5,8,10,0,0
+P2 · Alta,XRL5497,Javier,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=8),"Barras de apoyo, cama articulada, fisioterapia prioritaria",7,11,4,8,5,8,10,0,0
+P2 · Alta,XRL5497,Javier,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,7,11,4,8,5,8,10,0,0
+P2 · Alta,XRL5497,Javier,N2 · Dep.Total,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,7,11,4,8,5,8,10,0,0
+P2 · Alta,DWN2141,Juan,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,18,10,9,7,6,9,9,2,0
+P2 · Alta,DWN2141,Juan,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=9),"Barras de apoyo, cama articulada, fisioterapia prioritaria",18,10,9,7,6,9,9,2,0
+P2 · Alta,DWN2141,Juan,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,18,10,9,7,6,9,9,2,0
+P2 · Alta,FTJ5456,Juan,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=9),"Barras de apoyo, cama articulada, fisioterapia prioritaria",38,0,0,14,13,9,7,11,1
+P2 · Alta,WAR7163,Juan,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",78,3,9,15,13,5,4,1,0
+P2 · Alta,BNF7145,Lola,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,94,6,6,14,10,2,8,1,0
+P2 · Alta,BNF7145,Lola,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=2),"Barras de apoyo, cama articulada, fisioterapia prioritaria",94,6,6,14,10,2,8,1,0
+P2 · Alta,BNI9906,Lola,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",73,15,2,18,14,0,5,8,1
+P2 · Alta,BNI9906,Lola,N1 · Alt.Conducta,Depresión grave (GDS=15),Derivación a psicología/psiquiatría; reevaluación mensual,73,15,2,18,14,0,5,8,1
+P2 · Alta,DDG3686,Lola,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=4),"Barras de apoyo, cama articulada, fisioterapia prioritaria",32,4,6,11,20,4,7,1,1
+P2 · Alta,ENK3334,Lola,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,1,11,8,5,10,4,10,3,0
+P2 · Alta,ENK3334,Lola,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=4),"Barras de apoyo, cama articulada, fisioterapia prioritaria",1,11,8,5,10,4,10,3,0
+P2 · Alta,ENK3334,Lola,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=5),Estimulación cognitiva intensiva; supervisión constante,1,11,8,5,10,4,10,3,0
+P2 · Alta,FPS0415,Lola,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",17,3,8,15,20,5,10,6,1
+P2 · Alta,IKY4481,Lola,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=2),"Barras de apoyo, cama articulada, fisioterapia prioritaria",61,10,4,17,17,2,2,1,0
+P2 · Alta,JPD8131,Lola,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,96,10,5,7,15,24,10,2,1
+P2 · Alta,OFU9592,Lola,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,77,5,1,17,7,5,2,2,0
+P2 · Alta,OFU9592,Lola,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",77,5,1,17,7,5,2,2,0
+P2 · Alta,OFU9592,Lola,N4 · Dep.Moderada,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,77,5,1,17,7,5,2,2,0
+P2 · Alta,OFU9592,Lola,N4 · Dep.Moderada,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,77,5,1,17,7,5,2,2,0
+P2 · Alta,UBJ2564,Lola,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,21,6,9,12,11,3,6,2,1
+P2 · Alta,UBJ2564,Lola,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=3),"Barras de apoyo, cama articulada, fisioterapia prioritaria",21,6,9,12,11,3,6,2,1
+P2 · Alta,XCQ5937,Lola,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,23,4,7,13,12,20,0,10,1
+P2 · Alta,BSV5917,Lucía,N3 · Dep.Severa,Riesgo alto/muy alto úlceras presión (Norton=9),Protocolo de cambios posturales; colchón antiescaras,56,0,2,10,9,27,7,1,1
+P2 · Alta,BSV5917,Lucía,N3 · Dep.Severa,Deterioro cognitivo grave (MEC-Lobo=10),Estimulación cognitiva intensiva; supervisión constante,56,0,2,10,9,27,7,1,1
+P2 · Alta,JJX0859,Lucía,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=4),"Barras de apoyo, cama articulada, fisioterapia prioritaria",67,11,2,19,18,4,3,0,0
+P2 · Alta,LBY7992,Lucía,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=7),"Barras de apoyo, cama articulada, fisioterapia prioritaria",8,5,9,6,19,7,8,1,0
+P2 · Alta,LBY7992,Lucía,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=6),Estimulación cognitiva intensiva; supervisión constante,8,5,9,6,19,7,8,1,0
+P2 · Alta,ONL5969,Lucía,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,100,4,2,18,12,25,0,0,0
+P2 · Alta,LTU0801,Manolo,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,82,3,0,19,8,7,2,3,0
+P2 · Alta,LTU0801,Manolo,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=7),"Barras de apoyo, cama articulada, fisioterapia prioritaria",82,3,0,19,8,7,2,3,0
+P2 · Alta,MBI0008,Manolo,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",15,7,2,7,20,0,10,3,0
+P2 · Alta,MBI0008,Manolo,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,15,7,2,7,20,0,10,3,0
+P2 · Alta,CQM6221,María,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",91,7,9,13,13,5,2,3,0
+P2 · Alta,CQM6221,María,N4 · Dep.Moderada,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,91,7,9,13,13,5,2,3,0
+P2 · Alta,CQM6221,María,N4 · Dep.Moderada,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,91,7,9,13,13,5,2,3,0
+P2 · Alta,DHP4080,María,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,94,15,7,20,8,15,10,3,1
+P2 · Alta,DHP4080,María,N5 · Dep.Leve,Depresión grave (GDS=15),Derivación a psicología/psiquiatría; reevaluación mensual,94,15,7,20,8,15,10,3,1
+P2 · Alta,DNY3115,María,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,95,8,7,18,7,27,3,1,1
+P2 · Alta,GDC1817,María,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=8),Protocolo de cambios posturales; colchón antiescaras,99,8,4,15,8,11,8,3,0
+P2 · Alta,GNK9443,María,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,21,2,8,10,7,27,5,0,1
+P2 · Alta,GNK9443,María,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=10),Estimulación cognitiva intensiva; supervisión constante,21,2,8,10,7,27,5,0,1
+P2 · Alta,SLE3369,María,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=1),"Barras de apoyo, cama articulada, fisioterapia prioritaria",4,4,0,7,19,1,10,3,0
+P2 · Alta,SLE3369,María,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,4,4,0,7,19,1,10,3,0
+P2 · Alta,VTW9069,María,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,26,11,8,8,11,13,7,9,0
+P2 · Alta,VTW9069,María,N1 · Alt.Conducta,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,26,11,8,8,11,13,7,9,0
+P2 · Alta,VTW9069,María,N1 · Alt.Conducta,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,26,11,8,8,11,13,7,9,0
+P2 · Alta,XZD4751,María,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,100,0,1,18,11,26,0,0,0
+P2 · Alta,XZD4751,María,N6 · Independiente,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,100,0,1,18,11,26,0,0,0
+P2 · Alta,XZD4751,María,N6 · Independiente,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,100,0,1,18,11,26,0,0,0
+P2 · Alta,NXO4034,Miguel,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=9),Protocolo de cambios posturales; colchón antiescaras,14,2,3,8,9,4,9,2,0
+P2 · Alta,NXO4034,Miguel,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=4),"Barras de apoyo, cama articulada, fisioterapia prioritaria",14,2,3,8,9,4,9,2,0
+P2 · Alta,NXO4034,Miguel,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,14,2,3,8,9,4,9,2,0
+P2 · Alta,SOM8522,Miguel,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=6),"Barras de apoyo, cama articulada, fisioterapia prioritaria",88,4,8,18,20,6,1,0,0
+P2 · Alta,SOM8522,Miguel,N4 · Dep.Moderada,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,88,4,8,18,20,6,1,0,0
+P2 · Alta,SOM8522,Miguel,N4 · Dep.Moderada,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,88,4,8,18,20,6,1,0,0
+P2 · Alta,TFH5628,Miguel,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,90,1,5,13,12,16,4,3,0
+P2 · Alta,TFH5628,Miguel,N5 · Dep.Leve,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,90,1,5,13,12,16,4,3,0
+P2 · Alta,YSP0073,Miguel,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,85,11,2,18,11,19,7,9,0
+P2 · Alta,YTR1728,Miguel,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",78,11,4,18,17,5,4,1,0
+P2 · Alta,ADG8069,Paco,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=6),"Barras de apoyo, cama articulada, fisioterapia prioritaria",95,9,4,11,19,6,0,0,0
+P2 · Alta,COP0566,Paco,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,6,0,5,7,10,5,9,0,0
+P2 · Alta,COP0566,Paco,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",6,0,5,7,10,5,9,0,0
+P2 · Alta,COP0566,Paco,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,6,0,5,7,10,5,9,0,0
+P2 · Alta,COP0566,Paco,N2 · Dep.Total,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,6,0,5,7,10,5,9,0,0
+P2 · Alta,JDS3385,Paco,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,100,0,2,14,12,27,0,0,0
+P2 · Alta,JXV3603,Paco,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,100,4,1,16,7,25,0,0,0
+P2 · Alta,RHR1854,Paco,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,99,10,9,7,6,17,4,0,1
+P2 · Alta,RHR1854,Paco,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,99,10,9,7,6,17,4,0,1
+P2 · Alta,XBP3543,Paco,N3 · Dep.Severa,Riesgo alto/muy alto úlceras presión (Norton=5),Protocolo de cambios posturales; colchón antiescaras,43,12,5,12,5,20,5,2,1
+P2 · Alta,XBP3543,Paco,N3 · Dep.Severa,Depresión grave (GDS=12),Derivación a psicología/psiquiatría; reevaluación mensual,43,12,5,12,5,20,5,2,1
+P2 · Alta,XBP3543,Paco,N3 · Dep.Severa,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,43,12,5,12,5,20,5,2,1
+P2 · Alta,DUX2118,Pedro,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=10),Estimulación cognitiva intensiva; supervisión constante,38,5,7,10,18,28,7,1,1
+P2 · Alta,NHX8643,Pedro,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=2),"Barras de apoyo, cama articulada, fisioterapia prioritaria",97,8,6,20,15,2,0,2,1
+P2 · Alta,OKX6945,Pedro,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,100,3,2,18,11,25,0,0,0
+P2 · Alta,RVN4963,Pedro,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,5,12,6,6,7,7,8,0,0
+P2 · Alta,RVN4963,Pedro,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=7),"Barras de apoyo, cama articulada, fisioterapia prioritaria",5,12,6,6,7,7,8,0,0
+P2 · Alta,RVN4963,Pedro,N2 · Dep.Total,Depresión grave (GDS=12),Derivación a psicología/psiquiatría; reevaluación mensual,5,12,6,6,7,7,8,0,0
+P2 · Alta,RVN4963,Pedro,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=6),Estimulación cognitiva intensiva; supervisión constante,5,12,6,6,7,7,8,0,0
+P2 · Alta,TTM1692,Pedro,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=5),"Barras de apoyo, cama articulada, fisioterapia prioritaria",40,9,1,10,17,5,5,1,1
+P2 · Alta,TTM1692,Pedro,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=10),Estimulación cognitiva intensiva; supervisión constante,40,9,1,10,17,5,5,1,1
+P2 · Alta,XBI0592,Pedro,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=8),"Barras de apoyo, cama articulada, fisioterapia prioritaria",12,10,3,6,14,8,10,0,0
+P2 · Alta,XBI0592,Pedro,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=6),Estimulación cognitiva intensiva; supervisión constante,12,10,3,6,14,8,10,0,0
+P2 · Alta,FFF6730,Raquel,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=1),"Barras de apoyo, cama articulada, fisioterapia prioritaria",14,3,0,8,14,1,9,1,0
+P2 · Alta,FFF6730,Raquel,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,14,3,0,8,14,1,9,1,0
+P2 · Alta,FFF6730,Raquel,N2 · Dep.Total,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,14,3,0,8,14,1,9,1,0
+P2 · Alta,FFF6730,Raquel,N2 · Dep.Total,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,14,3,0,8,14,1,9,1,0
+P2 · Alta,GVI1884,Raquel,N4 · Dep.Moderada,Riesgo alto/muy alto úlceras presión (Norton=9),Protocolo de cambios posturales; colchón antiescaras,64,3,6,13,9,1,3,1,0
+P2 · Alta,GVI1884,Raquel,N4 · Dep.Moderada,Alto riesgo de caídas (Tinetti=1),"Barras de apoyo, cama articulada, fisioterapia prioritaria",64,3,6,13,9,1,3,1,0
+P2 · Alta,QJA1796,Raquel,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,93,15,6,12,10,16,1,1,1
+P2 · Alta,QJA1796,Raquel,N5 · Dep.Leve,Depresión grave (GDS=15),Derivación a psicología/psiquiatría; reevaluación mensual,93,15,6,12,10,16,1,1,1
+P2 · Alta,RWL3584,Raquel,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=5),Protocolo de cambios posturales; colchón antiescaras,94,13,4,7,5,11,9,2,0
+P2 · Alta,RWL3584,Raquel,N5 · Dep.Leve,Depresión grave (GDS=13),Derivación a psicología/psiquiatría; reevaluación mensual,94,13,4,7,5,11,9,2,0
+P2 · Alta,RWL3584,Raquel,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=7),Estimulación cognitiva intensiva; supervisión constante,94,13,4,7,5,11,9,2,0
+P2 · Alta,TLA1423,Raquel,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,100,3,2,14,12,27,0,0,0
+P2 · Alta,WMP6003,Raquel,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,99,11,4,13,12,22,10,3,1
+P2 · Alta,WMP6003,Raquel,N5 · Dep.Leve,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,99,11,4,13,12,22,10,3,1
+P2 · Alta,WMP6003,Raquel,N5 · Dep.Leve,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,99,11,4,13,12,22,10,3,1
+P2 · Alta,CZE1114,Rosa,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=7),Protocolo de cambios posturales; colchón antiescaras,35,10,3,18,7,10,5,6,0
+P2 · Alta,NCU1956,Rosa,N2 · Dep.Total,Riesgo alto/muy alto úlceras presión (Norton=10),Protocolo de cambios posturales; colchón antiescaras,0,14,8,9,10,0,10,2,0
+P2 · Alta,NCU1956,Rosa,N2 · Dep.Total,Alto riesgo de caídas (Tinetti=0),"Barras de apoyo, cama articulada, fisioterapia prioritaria",0,14,8,9,10,0,10,2,0
+P2 · Alta,NCU1956,Rosa,N2 · Dep.Total,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,0,14,8,9,10,0,10,2,0
+P2 · Alta,NCU1956,Rosa,N2 · Dep.Total,Deterioro cognitivo grave (MEC-Lobo=9),Estimulación cognitiva intensiva; supervisión constante,0,14,8,9,10,0,10,2,0
+P2 · Alta,NCU1956,Rosa,N2 · Dep.Total,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,0,14,8,9,10,0,10,2,0
+P2 · Alta,SOH9843,Rosa,N5 · Dep.Leve,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,92,14,4,6,6,11,2,3,1
+P2 · Alta,SOH9843,Rosa,N5 · Dep.Leve,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,92,14,4,6,6,11,2,3,1
+P2 · Alta,SOH9843,Rosa,N5 · Dep.Leve,Deterioro cognitivo grave (MEC-Lobo=6),Estimulación cognitiva intensiva; supervisión constante,92,14,4,6,6,11,2,3,1
+P2 · Alta,XOA9385,Rosa,N6 · Independiente,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,100,3,0,17,20,27,0,0,0
+P2 · Alta,CFU1297,Sofía,N6 · Independiente,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,100,4,2,15,6,26,0,0,0
+P2 · Alta,CFU1297,Sofía,N6 · Independiente,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,100,4,2,15,6,26,0,0,0
+P2 · Alta,CFU1297,Sofía,N6 · Independiente,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,100,4,2,15,6,26,0,0,0
+P2 · Alta,DRT6328,Sofía,N3 · Dep.Severa,Riesgo alto/muy alto úlceras presión (Norton=6),Protocolo de cambios posturales; colchón antiescaras,46,14,4,10,6,24,5,1,1
+P2 · Alta,DRT6328,Sofía,N3 · Dep.Severa,Depresión grave (GDS=14),Derivación a psicología/psiquiatría; reevaluación mensual,46,14,4,10,6,24,5,1,1
+P2 · Alta,DRT6328,Sofía,N3 · Dep.Severa,Deterioro cognitivo grave (MEC-Lobo=10),Estimulación cognitiva intensiva; supervisión constante,46,14,4,10,6,24,5,1,1
+P2 · Alta,GFO8847,Sofía,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,58,1,9,11,11,14,4,7,1
+P2 · Alta,GFO8847,Sofía,N1 · Alt.Conducta,Uso de pañales — incontinencia total,Protocolo de higiene íntima; registro de incontinencia,58,1,9,11,11,14,4,7,1
+P2 · Alta,GFO8847,Sofía,N1 · Alt.Conducta,Dependencia de silla de ruedas,Verificar accesibilidad habitación y zonas comunes,58,1,9,11,11,14,4,7,1
+P2 · Alta,HSD6283,Sofía,N1 · Alt.Conducta,Riesgo alto/muy alto úlceras presión (Norton=12),Protocolo de cambios posturales; colchón antiescaras,41,9,0,8,12,4,4,8,1
+P2 · Alta,HSD6283,Sofía,N1 · Alt.Conducta,Alto riesgo de caídas (Tinetti=4),"Barras de apoyo, cama articulada, fisioterapia prioritaria",41,9,0,8,12,4,4,8,1
+P2 · Alta,HSD6283,Sofía,N1 · Alt.Conducta,Deterioro cognitivo grave (MEC-Lobo=8),Estimulación cognitiva intensiva; supervisión constante,41,9,0,8,12,4,4,8,1
+P2 · Alta,KCY9500,Sofía,N5 · Dep.Leve,Depresión grave (GDS=12),Derivación a psicología/psiquiatría; reevaluación mensual,68,12,5,17,19,16,4,0,0
+P2 · Alta,SQE3213,Sofía,N3 · Dep.Severa,Riesgo alto/muy alto úlceras presión (Norton=11),Protocolo de cambios posturales; colchón antiescaras,60,4,6,12,11,25,5,3,1
+P3 · Media,QWD3129,Andrés,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,49,0,3,12,11,22,5,0,1
+P3 · Media,QWD3129,Andrés,N3 · Dep.Severa,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,49,0,3,12,11,22,5,0,1
+P3 · Media,BMW7812,Antonio,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,98,0,6,7,12,10,6,7,1
+P3 · Media,BMW7812,Antonio,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=10),Fisioterapia preventiva; calzado antideslizante,98,0,6,7,12,10,6,7,1
+P3 · Media,BMW7812,Antonio,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,98,0,6,7,12,10,6,7,1
+P3 · Media,DXB2434,Antonio,N1 · Alt.Conducta,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,74,5,1,8,14,12,3,6,0
+P3 · Media,DXB2434,Antonio,N1 · Alt.Conducta,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,74,5,1,8,14,12,3,6,0
+P3 · Media,DXB2434,Antonio,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=12),Fisioterapia preventiva; calzado antideslizante,74,5,1,8,14,12,3,6,0
+P3 · Media,DXB2434,Antonio,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,74,5,1,8,14,12,3,6,0
+P3 · Media,RKV2333,Antonio,N6 · Independiente,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,100,4,1,15,17,27,0,0,0
+P3 · Media,SLJ3300,Antonio,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,4,3,18,6,26,0,0,0
+P3 · Media,UIW1798,Antonio,N6 · Independiente,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,100,3,3,14,17,27,0,0,0
+P3 · Media,WYV0966,Antonio,N1 · Alt.Conducta,Ansiedad leve (Goldberg=4),Observación y apoyo social,3,2,4,11,11,23,0,7,1
+P3 · Media,YYU9565,Antonio,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,91,3,5,15,14,28,9,9,1
+P3 · Media,YYU9565,Antonio,N1 · Alt.Conducta,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,91,3,5,15,14,28,9,9,1
+P3 · Media,YYU9565,Antonio,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,91,3,5,15,14,28,9,9,1
+P3 · Media,ZOO7941,Antonio,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,45,14,8,14,5,18,8,4,0
+P3 · Media,ZOO7941,Antonio,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=18),Fisioterapia preventiva; calzado antideslizante,45,14,8,14,5,18,8,4,0
+P3 · Media,ZOO7941,Antonio,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,45,14,8,14,5,18,8,4,0
+P3 · Media,ZOO7941,Antonio,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,45,14,8,14,5,18,8,4,0
+P3 · Media,GDY0435,Carlos,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,97,9,7,20,9,26,2,3,0
+P3 · Media,GDY0435,Carlos,N5 · Dep.Leve,Depresión leve-moderada (GDS=9),Actividades de motivación; contacto familiar regular,97,9,7,20,9,26,2,3,0
+P3 · Media,IUJ5442,Carlos,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,54,4,6,11,18,0,6,2,1
+P3 · Media,IUJ5442,Carlos,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,54,4,6,11,18,0,6,2,1
+P3 · Media,JDP9221,Carlos,N2 · Dep.Total,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,6,11,1,6,16,2,10,2,0
+P3 · Media,KTR4778,Carlos,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,71,5,9,17,8,8,1,3,0
+P3 · Media,KTR4778,Carlos,N4 · Dep.Moderada,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,71,5,9,17,8,8,1,3,0
+P3 · Media,MSW4208,Carlos,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,8,7,7,7,20,10,9,3,0
+P3 · Media,MSW4208,Carlos,N2 · Dep.Total,Depresión leve-moderada (GDS=7),Actividades de motivación; contacto familiar regular,8,7,7,7,20,10,9,3,0
+P3 · Media,MSW4208,Carlos,N2 · Dep.Total,Riesgo medio de caídas (Tinetti=10),Fisioterapia preventiva; calzado antideslizante,8,7,7,7,20,10,9,3,0
+P3 · Media,MSW4208,Carlos,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,8,7,7,7,20,10,9,3,0
+P3 · Media,XXM0972,Carlos,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,95,0,6,17,16,0,9,5,0
+P3 · Media,XXM0972,Carlos,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,95,0,6,17,16,0,9,5,0
+P3 · Media,XXM0972,Carlos,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,95,0,6,17,16,0,9,5,0
+P3 · Media,FLG2019,Carmen,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,30,12,7,12,8,10,6,0,1
+P3 · Media,FLG2019,Carmen,N2 · Dep.Total,Riesgo medio de caídas (Tinetti=10),Fisioterapia preventiva; calzado antideslizante,30,12,7,12,8,10,6,0,1
+P3 · Media,FLG2019,Carmen,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,30,12,7,12,8,10,6,0,1
+P3 · Media,GMI1141,Carmen,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,95,6,7,17,5,6,8,3,0
+P3 · Media,GMI1141,Carmen,N4 · Dep.Moderada,Depresión leve-moderada (GDS=6),Actividades de motivación; contacto familiar regular,95,6,7,17,5,6,8,3,0
+P3 · Media,AYY8711,Elena,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,68,11,6,13,10,10,4,1,0
+P3 · Media,AYY8711,Elena,N5 · Dep.Leve,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,68,11,6,13,10,10,4,1,0
+P3 · Media,AYY8711,Elena,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=10),Fisioterapia preventiva; calzado antideslizante,68,11,6,13,10,10,4,1,0
+P3 · Media,BOK4939,Elena,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,98,11,8,8,19,11,2,1,1
+P3 · Media,BOK4939,Elena,N5 · Dep.Leve,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,98,11,8,8,19,11,2,1,1
+P3 · Media,BOK4939,Elena,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=11),Fisioterapia preventiva; calzado antideslizante,98,11,8,8,19,11,2,1,1
+P3 · Media,BOK4939,Elena,N5 · Dep.Leve,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,98,11,8,8,19,11,2,1,1
+P3 · Media,DCY3282,Elena,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,86,4,5,8,15,9,10,12,0
+P3 · Media,RRG8947,Elena,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,45,0,5,11,16,18,7,2,1
+P3 · Media,RRG8947,Elena,N3 · Dep.Severa,Riesgo medio de caídas (Tinetti=18),Fisioterapia preventiva; calzado antideslizante,45,0,5,11,16,18,7,2,1
+P3 · Media,RRG8947,Elena,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,45,0,5,11,16,18,7,2,1
+P3 · Media,BFE4900,Eva,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,51,11,9,11,16,6,7,3,1
+P3 · Media,BFE4900,Eva,N3 · Dep.Severa,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,51,11,9,11,16,6,7,3,1
+P3 · Media,BFE4900,Eva,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,51,11,9,11,16,6,7,3,1
+P3 · Media,ICO9779,Eva,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,99,14,9,9,8,16,7,1,1
+P3 · Media,ICO9779,Eva,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,99,14,9,9,8,16,7,1,1
+P3 · Media,ICO9779,Eva,N5 · Dep.Leve,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,99,14,9,9,8,16,7,1,1
+P3 · Media,ICO9779,Eva,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,99,14,9,9,8,16,7,1,1
+P3 · Media,RDI3071,Eva,N2 · Dep.Total,Depresión leve-moderada (GDS=7),Actividades de motivación; contacto familiar regular,15,7,0,9,16,1,10,1,0
+P3 · Media,RDI3071,Eva,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,15,7,0,9,16,1,10,1,0
+P3 · Media,SCZ5893,Eva,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,52,11,8,11,18,20,6,3,1
+P3 · Media,SCZ5893,Eva,N3 · Dep.Severa,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,52,11,8,11,18,20,6,3,1
+P3 · Media,SCZ5893,Eva,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,52,11,8,11,18,20,6,3,1
+P3 · Media,TQT8266,Eva,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,71,10,8,13,19,0,2,2,0
+P3 · Media,TQT8266,Eva,N4 · Dep.Moderada,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,71,10,8,13,19,0,2,2,0
+P3 · Media,TQT8266,Eva,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,71,10,8,13,19,0,2,2,0
+P3 · Media,BBJ3290,Javier,N5 · Dep.Leve,Depresión leve-moderada (GDS=8),Actividades de motivación; contacto familiar regular,62,8,0,19,14,11,0,1,0
+P3 · Media,BBJ3290,Javier,N5 · Dep.Leve,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,62,8,0,19,14,11,0,1,0
+P3 · Media,BBJ3290,Javier,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=11),Fisioterapia preventiva; calzado antideslizante,62,8,0,19,14,11,0,1,0
+P3 · Media,BBJ3290,Javier,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,62,8,0,19,14,11,0,1,0
+P3 · Media,BDG2694,Javier,N5 · Dep.Leve,Depresión leve-moderada (GDS=8),Actividades de motivación; contacto familiar regular,83,8,3,16,8,16,3,2,0
+P3 · Media,BDG2694,Javier,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,83,8,3,16,8,16,3,2,0
+P3 · Media,TTO9115,Javier,N2 · Dep.Total,Ansiedad leve (Goldberg=4),Observación y apoyo social,14,1,4,5,19,7,10,0,0
+P3 · Media,XRL5497,Javier,N2 · Dep.Total,Ansiedad leve (Goldberg=4),Observación y apoyo social,7,11,4,8,5,8,10,0,0
+P3 · Media,XRL5497,Javier,N2 · Dep.Total,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,7,11,4,8,5,8,10,0,0
+P3 · Media,XRL5497,Javier,N2 · Dep.Total,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,7,11,4,8,5,8,10,0,0
+P3 · Media,DWN2141,Juan,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,18,10,9,7,6,9,9,2,0
+P3 · Media,DWN2141,Juan,N2 · Dep.Total,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,18,10,9,7,6,9,9,2,0
+P3 · Media,DWN2141,Juan,N2 · Dep.Total,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,18,10,9,7,6,9,9,2,0
+P3 · Media,FTJ5456,Juan,N1 · Alt.Conducta,Riesgo medio úlceras presión (Norton=13),Cambios posturales periódicos; hidratación de piel,38,0,0,14,13,9,7,11,1
+P3 · Media,WAR7163,Juan,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,78,3,9,15,13,5,4,1,0
+P3 · Media,WAR7163,Juan,N4 · Dep.Moderada,Riesgo medio úlceras presión (Norton=13),Cambios posturales periódicos; hidratación de piel,78,3,9,15,13,5,4,1,0
+P3 · Media,WAR7163,Juan,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,78,3,9,15,13,5,4,1,0
+P3 · Media,BNF7145,Lola,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,94,6,6,14,10,2,8,1,0
+P3 · Media,BNF7145,Lola,N4 · Dep.Moderada,Depresión leve-moderada (GDS=6),Actividades de motivación; contacto familiar regular,94,6,6,14,10,2,8,1,0
+P3 · Media,BNF7145,Lola,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,94,6,6,14,10,2,8,1,0
+P3 · Media,BNI9906,Lola,N1 · Alt.Conducta,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,73,15,2,18,14,0,5,8,1
+P3 · Media,DDG3686,Lola,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,32,4,6,11,20,4,7,1,1
+P3 · Media,ENK3334,Lola,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,1,11,8,5,10,4,10,3,0
+P3 · Media,ENK3334,Lola,N2 · Dep.Total,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,1,11,8,5,10,4,10,3,0
+P3 · Media,ENK3334,Lola,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,1,11,8,5,10,4,10,3,0
+P3 · Media,FPS0415,Lola,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,17,3,8,15,20,5,10,6,1
+P3 · Media,FPS0415,Lola,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,17,3,8,15,20,5,10,6,1
+P3 · Media,IKY4481,Lola,N4 · Dep.Moderada,Ansiedad leve (Goldberg=4),Observación y apoyo social,61,10,4,17,17,2,2,1,0
+P3 · Media,IKY4481,Lola,N4 · Dep.Moderada,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,61,10,4,17,17,2,2,1,0
+P3 · Media,IKY4481,Lola,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,61,10,4,17,17,2,2,1,0
+P3 · Media,JPD8131,Lola,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,96,10,5,7,15,24,10,2,1
+P3 · Media,JPD8131,Lola,N5 · Dep.Leve,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,96,10,5,7,15,24,10,2,1
+P3 · Media,OFU9592,Lola,N4 · Dep.Moderada,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,77,5,1,17,7,5,2,2,0
+P3 · Media,OFU9592,Lola,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,77,5,1,17,7,5,2,2,0
+P3 · Media,UBJ2564,Lola,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,21,6,9,12,11,3,6,2,1
+P3 · Media,UBJ2564,Lola,N2 · Dep.Total,Depresión leve-moderada (GDS=6),Actividades de motivación; contacto familiar regular,21,6,9,12,11,3,6,2,1
+P3 · Media,UBJ2564,Lola,N2 · Dep.Total,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,21,6,9,12,11,3,6,2,1
+P3 · Media,XCQ5937,Lola,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,23,4,7,13,12,20,0,10,1
+P3 · Media,BSV5917,Lucía,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,56,0,2,10,9,27,7,1,1
+P3 · Media,ENZ9640,Lucía,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,25,3,7,11,16,25,6,2,1
+P3 · Media,JJX0859,Lucía,N4 · Dep.Moderada,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,67,11,2,19,18,4,3,0,0
+P3 · Media,JJX0859,Lucía,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,67,11,2,19,18,4,3,0,0
+P3 · Media,LBY7992,Lucía,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,8,5,9,6,19,7,8,1,0
+P3 · Media,LBY7992,Lucía,N2 · Dep.Total,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,8,5,9,6,19,7,8,1,0
+P3 · Media,MBI0008,Manolo,N2 · Dep.Total,Depresión leve-moderada (GDS=7),Actividades de motivación; contacto familiar regular,15,7,2,7,20,0,10,3,0
+P3 · Media,MBI0008,Manolo,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,15,7,2,7,20,0,10,3,0
+P3 · Media,CQM6221,María,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,91,7,9,13,13,5,2,3,0
+P3 · Media,CQM6221,María,N4 · Dep.Moderada,Depresión leve-moderada (GDS=7),Actividades de motivación; contacto familiar regular,91,7,9,13,13,5,2,3,0
+P3 · Media,CQM6221,María,N4 · Dep.Moderada,Riesgo medio úlceras presión (Norton=13),Cambios posturales periódicos; hidratación de piel,91,7,9,13,13,5,2,3,0
+P3 · Media,CQM6221,María,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,91,7,9,13,13,5,2,3,0
+P3 · Media,DHP4080,María,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,94,15,7,20,8,15,10,3,1
+P3 · Media,DHP4080,María,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=15),Fisioterapia preventiva; calzado antideslizante,94,15,7,20,8,15,10,3,1
+P3 · Media,DHP4080,María,N5 · Dep.Leve,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,94,15,7,20,8,15,10,3,1
+P3 · Media,DHP4080,María,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,94,15,7,20,8,15,10,3,1
+P3 · Media,DNY3115,María,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,95,8,7,18,7,27,3,1,1
+P3 · Media,DNY3115,María,N5 · Dep.Leve,Depresión leve-moderada (GDS=8),Actividades de motivación; contacto familiar regular,95,8,7,18,7,27,3,1,1
+P3 · Media,GDC1817,María,N5 · Dep.Leve,Ansiedad leve (Goldberg=4),Observación y apoyo social,99,8,4,15,8,11,8,3,0
+P3 · Media,GDC1817,María,N5 · Dep.Leve,Depresión leve-moderada (GDS=8),Actividades de motivación; contacto familiar regular,99,8,4,15,8,11,8,3,0
+P3 · Media,GDC1817,María,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=11),Fisioterapia preventiva; calzado antideslizante,99,8,4,15,8,11,8,3,0
+P3 · Media,GDC1817,María,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,99,8,4,15,8,11,8,3,0
+P3 · Media,GNK9443,María,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,21,2,8,10,7,27,5,0,1
+P3 · Media,VTW9069,María,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,26,11,8,8,11,13,7,9,0
+P3 · Media,VTW9069,María,N1 · Alt.Conducta,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,26,11,8,8,11,13,7,9,0
+P3 · Media,VTW9069,María,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=13),Fisioterapia preventiva; calzado antideslizante,26,11,8,8,11,13,7,9,0
+P3 · Media,VTW9069,María,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,26,11,8,8,11,13,7,9,0
+P3 · Media,XZD4751,María,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,0,1,18,11,26,0,0,0
+P3 · Media,SOM8522,Miguel,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,88,4,8,18,20,6,1,0,0
+P3 · Media,SOM8522,Miguel,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,88,4,8,18,20,6,1,0,0
+P3 · Media,TFH5628,Miguel,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,90,1,5,13,12,16,4,3,0
+P3 · Media,TFH5628,Miguel,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,90,1,5,13,12,16,4,3,0
+P3 · Media,TFH5628,Miguel,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,90,1,5,13,12,16,4,3,0
+P3 · Media,YSP0073,Miguel,N1 · Alt.Conducta,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,85,11,2,18,11,19,7,9,0
+P3 · Media,YTR1728,Miguel,N4 · Dep.Moderada,Ansiedad leve (Goldberg=4),Observación y apoyo social,78,11,4,18,17,5,4,1,0
+P3 · Media,YTR1728,Miguel,N4 · Dep.Moderada,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,78,11,4,18,17,5,4,1,0
+P3 · Media,ADG8069,Paco,N4 · Dep.Moderada,Ansiedad leve (Goldberg=4),Observación y apoyo social,95,9,4,11,19,6,0,0,0
+P3 · Media,ADG8069,Paco,N4 · Dep.Moderada,Depresión leve-moderada (GDS=9),Actividades de motivación; contacto familiar regular,95,9,4,11,19,6,0,0,0
+P3 · Media,ADG8069,Paco,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,95,9,4,11,19,6,0,0,0
+P3 · Media,ADG8069,Paco,N4 · Dep.Moderada,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,95,9,4,11,19,6,0,0,0
+P3 · Media,COP0566,Paco,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,6,0,5,7,10,5,9,0,0
+P3 · Media,RHR1854,Paco,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,99,10,9,7,6,17,4,0,1
+P3 · Media,RHR1854,Paco,N5 · Dep.Leve,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,99,10,9,7,6,17,4,0,1
+P3 · Media,RHR1854,Paco,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=17),Fisioterapia preventiva; calzado antideslizante,99,10,9,7,6,17,4,0,1
+P3 · Media,RHR1854,Paco,N5 · Dep.Leve,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,99,10,9,7,6,17,4,0,1
+P3 · Media,XBP3543,Paco,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,43,12,5,12,5,20,5,2,1
+P3 · Media,DUX2118,Pedro,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=7),Seguimiento psicológico; técnicas de relajación,38,5,7,10,18,28,7,1,1
+P3 · Media,DUX2118,Pedro,N2 · Dep.Total,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,38,5,7,10,18,28,7,1,1
+P3 · Media,DUX2118,Pedro,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,38,5,7,10,18,28,7,1,1
+P3 · Media,NHX8643,Pedro,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,97,8,6,20,15,2,0,2,1
+P3 · Media,NHX8643,Pedro,N4 · Dep.Moderada,Depresión leve-moderada (GDS=8),Actividades de motivación; contacto familiar regular,97,8,6,20,15,2,0,2,1
+P3 · Media,NHX8643,Pedro,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,97,8,6,20,15,2,0,2,1
+P3 · Media,RVN4963,Pedro,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,5,12,6,6,7,7,8,0,0
+P3 · Media,RVN4963,Pedro,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,5,12,6,6,7,7,8,0,0
+P3 · Media,TTM1692,Pedro,N2 · Dep.Total,Depresión leve-moderada (GDS=9),Actividades de motivación; contacto familiar regular,40,9,1,10,17,5,5,1,1
+P3 · Media,XBI0592,Pedro,N2 · Dep.Total,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,12,10,3,6,14,8,10,0,0
+P3 · Media,XBI0592,Pedro,N2 · Dep.Total,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,12,10,3,6,14,8,10,0,0
+P3 · Media,FFF6730,Raquel,N2 · Dep.Total,Riesgo medio úlceras presión (Norton=14),Cambios posturales periódicos; hidratación de piel,14,3,0,8,14,1,9,1,0
+P3 · Media,FFF6730,Raquel,N2 · Dep.Total,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,14,3,0,8,14,1,9,1,0
+P3 · Media,FFF6730,Raquel,N2 · Dep.Total,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,14,3,0,8,14,1,9,1,0
+P3 · Media,GVI1884,Raquel,N4 · Dep.Moderada,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,64,3,6,13,9,1,3,1,0
+P3 · Media,GVI1884,Raquel,N4 · Dep.Moderada,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,64,3,6,13,9,1,3,1,0
+P3 · Media,QJA1796,Raquel,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,93,15,6,12,10,16,1,1,1
+P3 · Media,QJA1796,Raquel,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,93,15,6,12,10,16,1,1,1
+P3 · Media,RWL3584,Raquel,N5 · Dep.Leve,Ansiedad leve (Goldberg=4),Observación y apoyo social,94,13,4,7,5,11,9,2,0
+P3 · Media,RWL3584,Raquel,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=11),Fisioterapia preventiva; calzado antideslizante,94,13,4,7,5,11,9,2,0
+P3 · Media,WMP6003,Raquel,N5 · Dep.Leve,Ansiedad leve (Goldberg=4),Observación y apoyo social,99,11,4,13,12,22,10,3,1
+P3 · Media,WMP6003,Raquel,N5 · Dep.Leve,Depresión leve-moderada (GDS=11),Actividades de motivación; contacto familiar regular,99,11,4,13,12,22,10,3,1
+P3 · Media,WMP6003,Raquel,N5 · Dep.Leve,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,99,11,4,13,12,22,10,3,1
+P3 · Media,CZE1114,Rosa,N1 · Alt.Conducta,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,35,10,3,18,7,10,5,6,0
+P3 · Media,CZE1114,Rosa,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=10),Fisioterapia preventiva; calzado antideslizante,35,10,3,18,7,10,5,6,0
+P3 · Media,HYS8827,Rosa,N6 · Independiente,Riesgo medio úlceras presión (Norton=13),Cambios posturales periódicos; hidratación de piel,100,4,0,16,13,26,0,0,0
+P3 · Media,HYS8827,Rosa,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,4,0,16,13,26,0,0,0
+P3 · Media,JLN3497,Rosa,N1 · Alt.Conducta,Depresión leve-moderada (GDS=10),Actividades de motivación; contacto familiar regular,46,10,1,19,17,19,4,9,0
+P3 · Media,JLN3497,Rosa,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,46,10,1,19,17,19,4,9,0
+P3 · Media,JLN3497,Rosa,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,46,10,1,19,17,19,4,9,0
+P3 · Media,NCU1956,Rosa,N2 · Dep.Total,Ansiedad moderada-alta (Goldberg=8),Seguimiento psicológico; técnicas de relajación,0,14,8,9,10,0,10,2,0
+P3 · Media,NCU4581,Rosa,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,4,1,14,17,28,0,0,0
+P3 · Media,OHD3889,Rosa,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,61,5,9,13,17,13,4,3,0
+P3 · Media,OHD3889,Rosa,N5 · Dep.Leve,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,61,5,9,13,17,13,4,3,0
+P3 · Media,OHD3889,Rosa,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=13),Fisioterapia preventiva; calzado antideslizante,61,5,9,13,17,13,4,3,0
+P3 · Media,SOH9843,Rosa,N5 · Dep.Leve,Ansiedad leve (Goldberg=4),Observación y apoyo social,92,14,4,6,6,11,2,3,1
+P3 · Media,SOH9843,Rosa,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=11),Fisioterapia preventiva; calzado antideslizante,92,14,4,6,6,11,2,3,1
+P3 · Media,SOH9843,Rosa,N5 · Dep.Leve,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,92,14,4,6,6,11,2,3,1
+P3 · Media,XOA9385,Rosa,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,3,0,17,20,27,0,0,0
+P3 · Media,YOD3294,Rosa,N5 · Dep.Leve,Depresión leve-moderada (GDS=5),Actividades de motivación; contacto familiar regular,68,5,2,17,18,16,1,0,0
+P3 · Media,YOD3294,Rosa,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,68,5,2,17,18,16,1,0,0
+P3 · Media,CFU1297,Sofía,N6 · Independiente,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,100,4,2,15,6,26,0,0,0
+P3 · Media,DRT6328,Sofía,N3 · Dep.Severa,Ansiedad leve (Goldberg=4),Observación y apoyo social,46,14,4,10,6,24,5,1,1
+P3 · Media,DRT6328,Sofía,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,46,14,4,10,6,24,5,1,1
+P3 · Media,GFO8847,Sofía,N1 · Alt.Conducta,Ansiedad moderada-alta (Goldberg=9),Seguimiento psicológico; técnicas de relajación,58,1,9,11,11,14,4,7,1
+P3 · Media,GFO8847,Sofía,N1 · Alt.Conducta,Riesgo medio de caídas (Tinetti=14),Fisioterapia preventiva; calzado antideslizante,58,1,9,11,11,14,4,7,1
+P3 · Media,GFO8847,Sofía,N1 · Alt.Conducta,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,58,1,9,11,11,14,4,7,1
+P3 · Media,GFO8847,Sofía,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,58,1,9,11,11,14,4,7,1
+P3 · Media,HSD6283,Sofía,N1 · Alt.Conducta,Depresión leve-moderada (GDS=9),Actividades de motivación; contacto familiar regular,41,9,0,8,12,4,4,8,1
+P3 · Media,HSD6283,Sofía,N1 · Alt.Conducta,Necesita asistencia nocturna,Valorar turno de noche dedicado o sistema de llamada,41,9,0,8,12,4,4,8,1
+P3 · Media,KCY9500,Sofía,N5 · Dep.Leve,Ansiedad moderada-alta (Goldberg=5),Seguimiento psicológico; técnicas de relajación,68,12,5,17,19,16,4,0,0
+P3 · Media,KCY9500,Sofía,N5 · Dep.Leve,Riesgo medio de caídas (Tinetti=16),Fisioterapia preventiva; calzado antideslizante,68,12,5,17,19,16,4,0,0
+P3 · Media,SQE3213,Sofía,N3 · Dep.Severa,Ansiedad moderada-alta (Goldberg=6),Seguimiento psicológico; técnicas de relajación,60,4,6,12,11,25,5,3,1
+P3 · Media,SQE3213,Sofía,N3 · Dep.Severa,Pérdida de memoria declarada,Taller de estimulación cognitiva; supervisión en AVD,60,4,6,12,11,25,5,3,1
