@@ -18,9 +18,7 @@ from algoritmo_compatibilidad import (
     n_adl, TTL_FILE,
 )
 
-# ══════════════════════════════════════════════════════════════════
 # CONFIGURACIÓN DE PÁGINA
-# ══════════════════════════════════════════════════════════════════
 
 st.set_page_config(
     page_title="Co-Housing Senior · TFG",
@@ -29,7 +27,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ── CSS tema oscuro ───────────────────────────────────────────────
+
 st.markdown("""
 <style>
 /* ── Fondo general oscuro ── */
@@ -335,9 +333,9 @@ footer    { visibility: hidden; }
 """, unsafe_allow_html=True)
 
 
-# ══════════════════════════════════════════════════════════════════
+
 # CARGA DE DATOS
-# ══════════════════════════════════════════════════════════════════
+
 
 @st.cache_resource
 def cargar_sistema():
@@ -350,9 +348,7 @@ def cargar_sistema():
     return perfiles, matriz, parejas, ranking
 
 
-# ══════════════════════════════════════════════════════════════════
-# HELPERS
-# ══════════════════════════════════════════════════════════════════
+
 
 def badge_nivel(nivel: int) -> str:
     bg  = NIVEL_COLOR_BG.get(nivel, "334455")
@@ -400,9 +396,7 @@ def metrica_sidebar(valor, etiqueta: str) -> str:
             f'</div>')
 
 
-# ══════════════════════════════════════════════════════════════════
-# CABECERA PRINCIPAL
-# ══════════════════════════════════════════════════════════════════
+
 
 st.markdown("""
 <div class="header-banner">
@@ -418,9 +412,6 @@ with st.spinner("Cargando ontologia y calculando compatibilidades..."):
 codigos = sorted(perfiles)
 
 
-# ══════════════════════════════════════════════════════════════════
-# BARRA LATERAL
-# ══════════════════════════════════════════════════════════════════
 
 with st.sidebar:
     st.markdown("### Filtros y navegacion")
@@ -465,9 +456,7 @@ with st.sidebar:
         st.markdown(metrica_sidebar(f"{media:.1f}%",    "Afinidad media"),unsafe_allow_html=True)
 
 
-# ══════════════════════════════════════════════════════════════════
-# FICHA CLÍNICA
-# ══════════════════════════════════════════════════════════════════
+
 
 seccion("Ficha del residente")
 
@@ -526,9 +515,7 @@ with col3:
         st.markdown(dato("Religion",    perfil["religion"]), unsafe_allow_html=True)
 
 
-# ══════════════════════════════════════════════════════════════════
-# RANKING DE CANDIDATOS
-# ══════════════════════════════════════════════════════════════════
+
 
 st.divider()
 seccion("Candidatos mas compatibles")
@@ -575,9 +562,7 @@ st.dataframe(
 )
 
 
-# ══════════════════════════════════════════════════════════════════
-# DETALLE DE PAREJA
-# ══════════════════════════════════════════════════════════════════
+
 
 st.divider()
 seccion("Analisis detallado de pareja")
@@ -595,7 +580,6 @@ if opciones_pareja:
     )
     pb_sel = perfiles[codigo_b_sel]
 
-    # ── Paneles de la pareja ──────────────────────────────────
     col_pa, col_vs, col_pb = st.columns([5, 1, 5], gap="small")
 
     with col_pa:
@@ -621,7 +605,7 @@ if opciones_pareja:
             unsafe_allow_html=True,
         )
 
-    # ── Puntuación y barra ───────────────────────────────────
+   
     st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
     col_pct, col_bar = st.columns([1, 5], gap="medium")
 
@@ -639,7 +623,7 @@ if opciones_pareja:
             unsafe_allow_html=True,
         )
 
-    # ── Tabla de reglas ──────────────────────────────────────
+    
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
     st.markdown(
         '<p style="font-weight:700; color:#a0c4e0; margin-bottom:8px;">'
@@ -672,9 +656,6 @@ else:
     st.info("Este residente tiene todos los candidatos vetados.")
 
 
-# ══════════════════════════════════════════════════════════════════
-# TOP 10 GLOBAL + DISTRIBUCIÓN POR NIVELES
-# ══════════════════════════════════════════════════════════════════
 
 st.divider()
 col_top, col_sep, col_dist = st.columns([3, 0.08, 2], gap="medium")
