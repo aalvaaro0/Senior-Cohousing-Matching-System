@@ -5,19 +5,6 @@ algoritmo_compatibilidad.py
 
 Algoritmo de emparejamiento por PORCENTAJE DE AFINIDAD para co-housing senior.
 
-TFG – "Diseño y Desarrollo de un Prototipo de Filtrado Inteligente para el
-Emparejamiento de Convivencia Senior mediante Sistemas Basados en Conocimiento"
-Autor: Álvaro · Ingeniería Informática · 2026
-
-Clases principales:
-  · TFG_CargadorOntologia      — carga el grafo TTL y el suplemento XLS
-  · TFG_MotorCompatibilidad    — calcula puntuaciones de afinidad entre pares
-  · TFG_ExportadorResultados   — genera todos los archivos de salida
-  · TFG_SistemaCoHousing       — coordinador principal (consola + orquestación)
-
-SALIDAS
-  · Consola              → ranking por cada residente con tabla formateada
-  · resultados/fichas_residentes.xlsx  → Excel profesional con 4 hojas
 
 USO
   python algoritmo_compatibilidad.py              # todos los residentes
@@ -326,12 +313,12 @@ class TFG_CargadorOntologia:
     def cargar_datos_excel_xls(self) -> dict[str, dict]:
         """Lee el XLS y devuelve {codigo: {hobby, religion}} para los 2 campos nuevos."""
         if XLS_FILE is None:
-            print("  ⚠  ResidenciaDB-xlsx.xls no encontrado → hobby/religión no disponibles")
+            print("  ResidenciaDB-xlsx.xls no encontrado → hobby/religión no disponibles")
             return {}
         try:
             import xlrd
         except ImportError:
-            print("  ⚠  xlrd no instalado (pip install xlrd) → hobby/religión no disponibles")
+            print("   xlrd no instalado (pip install xlrd) → hobby/religión no disponibles")
             return {}
 
         wb  = xlrd.open_workbook(str(XLS_FILE))
@@ -1287,7 +1274,7 @@ class TFG_ExportadorResultados:
     def exportar_alertas_clinicas_y_menus(self, perfiles: dict, directorio: Path) -> None:
         directorio.mkdir(parents=True, exist_ok=True)
 
-        # alertas_enfermeria.csv 
+        # ── alertas ──────────────────────────────────────────────────────────────
         alertas = []
         for code, p in perfiles.items():
             def _alerta(prio, motivo, accion):
@@ -1376,14 +1363,11 @@ class TFG_ExportadorResultados:
         prioridad_ord = {"P1 · Crítica": 0, "P2 · Alta": 1, "P3 · Media": 2}
         alertas.sort(key=lambda x: (prioridad_ord.get(x["Prioridad"], 9), x["Nombre"]))
 
-        ruta_a = directorio / "alertas_enfermeria.csv"
-        pd.DataFrame(alertas).to_csv(ruta_a, index=False, encoding="utf-8-sig")
         p1 = sum(1 for a in alertas if a["Prioridad"].startswith("P1"))
         p2 = sum(1 for a in alertas if a["Prioridad"].startswith("P2"))
         p3 = sum(1 for a in alertas if a["Prioridad"].startswith("P3"))
-        print(f"  ✓ alertas_enfermeria.csv  ({len(alertas)} alertas: P1={p1} P2={p2} P3={p3})")
 
-        # ── menus_comedor.csv ─────────────────────────────────────────────────────
+        # ── menus ─────────────────────────────────────────────────────────────────
         menus = []
         for code, p in perfiles.items():
             dietas = p["dieta"] - {"Ninguna"}
@@ -1419,12 +1403,232 @@ class TFG_ExportadorResultados:
             })
 
         menus.sort(key=lambda x: x["Nombre"])
-        ruta_m = directorio / "menus_comedor.csv"
-        pd.DataFrame(menus).to_csv(ruta_m, index=False, encoding="utf-8-sig")
         especiales = sum(1 for m in menus if m["Dietas Especiales"] != "Ninguna")
-        print(f"  ✓ menus_comedor.csv  ({len(menus)} residentes, {especiales} con dieta especial)")
 
- 
+        # ── Excel formateado: alertas_enfermeria.xlsx + menus_comedor.xlsx ──────────
+        try:
+            from openpyxl import Workbook
+            from openpyxl.styles import PatternFill, Font, Alignment, Border, Side
+            from openpyxl.utils import get_column_letter
+        except ImportError:
+            print("  ⚠ openpyxl no disponible → Excel no generado (pip install openpyxl)")
+            return
+
+        def _fill(h):  return PatternFill("solid", fgColor=h)
+        def _font(bold=False, color="1A1A1A", size=9, italic=False):
+            return Font(bold=bold, color=color, size=size, italic=italic, name="Calibri")
+        def _align(h="left", wrap=False):
+            return Alignment(horizontal=h, vertical="center", wrap_text=wrap)
+        _s = Side(style="thin", color="CCCCCC")
+        _b = Border(left=_s, right=_s, top=_s, bottom=_s)
+
+        # ── EXCEL 1: alertas_enfermeria.xlsx ─────────────────────────────────────
+        wb_a = Workbook()
+        ws1 = wb_a.active
+        ws1.title = "Alertas Enfermería"
+        ws1.sheet_view.showGridLines = False
+
+        PRIO_BG = {"P1 · Crítica": "FFCDD2", "P2 · Alta": "FFE0B2", "P3 · Media": "FFF9C4"}
+        PRIO_FG = {"P1 · Crítica": "B71C1C", "P2 · Alta": "BF360C", "P3 · Media": "E65100"}
+
+        ncA = 15
+        ws1.merge_cells(f"A1:{get_column_letter(ncA)}1")
+        c = ws1["A1"]
+        c.value = (f"ALERTAS CLÍNICAS DE ENFERMERÍA  ·  {len(alertas)} alertas  "
+                   f"(P1 Crítica: {p1}  ·  P2 Alta: {p2}  ·  P3 Media: {p3})")
+        c.fill = _fill("1A3A5C"); c.font = _font(bold=True, color="FFFFFF", size=12)
+        c.alignment = _align("center"); ws1.row_dimensions[1].height = 26
+
+        hdrs_a = ["Prioridad", "Código", "Nombre", "Nivel", "Alerta", "Acción Recomendada",
+                  "Barthel", "GDS", "Goldberg", "MEC-Lobo", "Norton", "Tinetti",
+                  "Pfeiffer", "NPI", "NECPAL"]
+        for j, h in enumerate(hdrs_a, 1):
+            c = ws1.cell(2, j, h)
+            c.fill = _fill("2D6A9F"); c.font = _font(bold=True, color="FFFFFF")
+            c.alignment = _align("center", wrap=True); c.border = _b
+        ws1.row_dimensions[2].height = 32
+        ws1.freeze_panes = "A3"
+
+        for j, w in enumerate([15, 10, 16, 22, 52, 52, 8, 7, 9, 9, 8, 8, 9, 7, 8], 1):
+            ws1.column_dimensions[get_column_letter(j)].width = w
+
+        for i, a in enumerate(alertas, 3):
+            prio = a["Prioridad"]
+            bg = PRIO_BG.get(prio, "FFFFFF")
+            fg = PRIO_FG.get(prio, "000000")
+            for j, key in enumerate(hdrs_a, 1):
+                val = a.get(key) if a.get(key) is not None else "—"
+                c = ws1.cell(i, j, val)
+                c.fill = _fill(bg)
+                c.font = _font(bold=(j == 1), color=(fg if j == 1 else "1A1A1A"))
+                c.alignment = _align(
+                    "center" if j in (1, 2, 7, 8, 9, 10, 11, 12, 13, 14, 15) else "left",
+                    wrap=(j in (5, 6)))
+                c.border = _b
+            txt_accion = a.get("Acción Recomendada", "")
+            ws1.row_dimensions[i].height = 30 if len(txt_accion) > 55 else 16
+
+        ruta_a = directorio / "alertas_enfermeria.xlsx"
+        try:
+            wb_a.save(str(ruta_a))
+            print(f"  ✓ alertas_enfermeria.xlsx  ({len(alertas)} alertas: P1={p1} P2={p2} P3={p3})")
+        except PermissionError:
+            import time
+            alt = directorio / f"alertas_enfermeria_{int(time.time())}.xlsx"
+            wb_a.save(str(alt))
+            print(f"  ⚠ alertas_enfermeria.xlsx estaba abierto → guardado como {alt.name}")
+
+        # ── EXCEL 2: menus_comedor.xlsx ───────────────────────────────────────────
+        wb_m = Workbook()
+        ws2 = wb_m.active
+        ws2.title = "Menús Comedor"
+        ws2.sheet_view.showGridLines = False
+
+        MENU_BG = {
+            "Menú Diabético":     "E8F5E9",
+            "Sin Gluten":         "FFF8E1",
+            "Sin Lactosa":        "E3F2FD",
+            "Hipocalórico":       "FCE4EC",
+            "Hiposódico":         "F3E5F5",
+            "Triturado/Puré":     "FBE9E7",
+            "Vegetariano":        "DCEDC8",
+            "Vegano":             "C5E1A5",
+            "Bajo en Colesterol": "FFF3E0",
+            "Blanda":             "EFEBE9",
+        }
+
+        ncM = 11
+        ws2.merge_cells(f"A1:{get_column_letter(ncM)}1")
+        c = ws2["A1"]
+        c.value = (f"MENÚS DE COMEDOR ASIGNADOS  ·  {len(menus)} residentes  "
+                   f"·  {especiales} con dieta especial")
+        c.fill = _fill("1A3A5C"); c.font = _font(bold=True, color="FFFFFF", size=12)
+        c.alignment = _align("center"); ws2.row_dimensions[1].height = 26
+
+        hdrs_m = ["Código", "Nombre", "Nivel", "Menú Principal", "Dietas Especiales",
+                  "Diabetes", "Colesterol", "Triturado", "Barthel", "Ayuda Comer",
+                  "Consideraciones"]
+        m_keys = ["Código", "Nombre", "Nivel Convivencia", "Menú Principal", "Dietas Especiales",
+                  "Diabetes", "Colesterol Alto", "Triturado/Puré", "Barthel",
+                  "Necesita Ayuda Comer", "Consideraciones"]
+        for j, h in enumerate(hdrs_m, 1):
+            c = ws2.cell(2, j, h)
+            c.fill = _fill("2D6A9F"); c.font = _font(bold=True, color="FFFFFF")
+            c.alignment = _align("center", wrap=True); c.border = _b
+        ws2.row_dimensions[2].height = 28
+        ws2.freeze_panes = "A3"
+
+        for j, w in enumerate([10, 16, 22, 18, 32, 9, 11, 10, 8, 12, 32], 1):
+            ws2.column_dimensions[get_column_letter(j)].width = w
+
+        for i, m in enumerate(menus, 3):
+            menu_p = m.get("Menú Principal", "Estándar")
+            bg = MENU_BG.get(menu_p, "FFFFFF" if i % 2 == 0 else "F5F5F5")
+            for j, key in enumerate(m_keys, 1):
+                val = m.get(key) if m.get(key) is not None else "—"
+                c = ws2.cell(i, j, val)
+                c.fill = _fill(bg)
+                c.font = _font(bold=(j == 4 and menu_p != "Estándar"))
+                c.alignment = _align(
+                    "center" if j in (1, 6, 7, 8, 9, 10) else "left",
+                    wrap=(j in (5, 11)))
+                c.border = _b
+            ws2.row_dimensions[i].height = 15
+
+        ruta_m = directorio / "menus_comedor.xlsx"
+        try:
+            wb_m.save(str(ruta_m))
+            print(f"  ✓ menus_comedor.xlsx  ({len(menus)} residentes, {especiales} con dieta especial)")
+        except PermissionError:
+            import time
+            alt = directorio / f"menus_comedor_{int(time.time())}.xlsx"
+            wb_m.save(str(alt))
+            print(f"  ⚠ menus_comedor.xlsx estaba abierto → guardado como {alt.name}")
+
+
+    def exportar_ranking_parejas(self, parejas: list, perfiles: dict, directorio: Path) -> None:
+        """Genera ranking_parejas.xlsx con todas las parejas no vetadas ordenadas por afinidad."""
+        directorio.mkdir(parents=True, exist_ok=True)
+        try:
+            from openpyxl import Workbook
+            from openpyxl.styles import PatternFill, Font, Alignment, Border, Side
+            from openpyxl.utils import get_column_letter
+        except ImportError:
+            print("  ⚠ openpyxl no disponible → ranking_parejas no generado")
+            return
+
+        def _fill(h):  return PatternFill("solid", fgColor=h)
+        def _font(bold=False, color="1A1A1A", size=9):
+            return Font(bold=bold, color=color, size=size, name="Calibri")
+        def _align(h="center", wrap=False):
+            return Alignment(horizontal=h, vertical="center", wrap_text=wrap)
+        _s = Side(style="thin", color="CCCCCC")
+        _b = Border(left=_s, right=_s, top=_s, bottom=_s)
+
+        def _score_bg(pct):
+            if pct >= 70: return "C8E6C9"   # verde
+            if pct >= 50: return "DCEDC8"   # verde claro
+            if pct >= 30: return "FFF9C4"   # amarillo
+            return "FFECB3"                 # naranja claro
+
+        no_vet = [p for p in parejas if p["pct"] > 0]
+
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Ranking Parejas"
+        ws.sheet_view.showGridLines = False
+
+        ncR = 9
+        ws.merge_cells(f"A1:{get_column_letter(ncR)}1")
+        c = ws["A1"]
+        c.value = (f"RANKING DE PAREJAS COMPATIBLES  ·  {len(no_vet):,} parejas no vetadas  "
+                   f"(de {len(parejas):,} evaluadas en total)")
+        c.fill = _fill("1A3A5C"); c.font = _font(bold=True, color="FFFFFF", size=12)
+        c.alignment = _align("center"); ws.row_dimensions[1].height = 26
+
+        hdrs = ["Pos.", "Código A", "Nombre A", "Nivel A",
+                "Código B", "Nombre B", "Nivel B",
+                "Afinidad %", "Principales razones (+)"]
+        for j, h in enumerate(hdrs, 1):
+            c = ws.cell(2, j, h)
+            c.fill = _fill("2D6A9F"); c.font = _font(bold=True, color="FFFFFF")
+            c.alignment = _align("center", wrap=True); c.border = _b
+        ws.row_dimensions[2].height = 30
+        ws.freeze_panes = "A3"
+
+        for j, w in enumerate([6, 11, 16, 24, 11, 16, 24, 12, 58], 1):
+            ws.column_dimensions[get_column_letter(j)].width = w
+
+        for i, par in enumerate(no_vet, 3):
+            bg = _score_bg(par["pct"])
+            razones = "  ·  ".join(
+                txt for txt, pts in sorted(par["detalle"], key=lambda x: -x[1])[:4]
+                if pts > 0
+            )
+            nA = NIVEL_SHORT.get(par["nivel_A"], "")
+            nB = NIVEL_SHORT.get(par["nivel_B"], "")
+            vals = [i - 2, par["A"], par["nombre_A"], nA,
+                    par["B"], par["nombre_B"], nB, par["pct"], razones]
+            for j, v in enumerate(vals, 1):
+                c = ws.cell(i, j, v)
+                c.fill = _fill(bg)
+                c.font = _font(
+                    bold=(j == 8),
+                    color=("2E7D32" if par["pct"] >= 70 else "1A1A1A"))
+                c.alignment = _align("center" if j != 9 else "left", wrap=(j == 9))
+                c.border = _b
+            ws.row_dimensions[i].height = 15
+
+        ruta_x = directorio / "ranking_parejas.xlsx"
+        try:
+            wb.save(str(ruta_x))
+            print(f"  ✓ ranking_parejas.xlsx  ({len(no_vet):,} parejas no vetadas)")
+        except PermissionError:
+            import time
+            alt = directorio / f"ranking_parejas_{int(time.time())}.xlsx"
+            wb.save(str(alt))
+            print(f"  ⚠ ranking_parejas.xlsx estaba abierto → guardado como {alt.name}")
+
 
 # CLASE: TFG_SistemaCoHousing
 
@@ -1436,8 +1640,37 @@ class TFG_SistemaCoHousing:
         self.motor      = TFG_MotorCompatibilidad()
         self.exportador = TFG_ExportadorResultados()
 
+    @staticmethod
+    def _limpiar_resultados(directorio: Path) -> None:
+        """Elimina archivos no-Excel y xlsx con timestamp de ejecuciones anteriores."""
+        import re
+        if not directorio.exists():
+            return
+        eliminados = []
+        for f in directorio.iterdir():
+            if not f.is_file():
+                continue
+            # Borrar solo .csv (los .ttl y .xlsx se gestionan aparte)
+            if f.suffix.lower() == ".csv":
+                f.unlink()
+                eliminados.append(f.name)
+                continue
+            # Borrar xlsx con timestamp (_XXXXXXXXXX.xlsx)
+            if re.search(r"_\d{9,}\.xlsx$", f.name):
+                f.unlink()
+                eliminados.append(f.name)
+                continue
+            # Borrar alertas_menus.xlsx si quedó de versiones anteriores
+            if f.name == "alertas_menus.xlsx":
+                f.unlink()
+                eliminados.append(f.name)
+        if eliminados:
+            print(f"  🗑  Limpieza: {len(eliminados)} archivo(s) antiguo(s) eliminado(s)")
+
     def ejecutar(self, args):
         print("Iniciando algoritmo...")
+
+        self._limpiar_resultados(RESULTADOS)
 
         grafo = self.cargador.cargar_grafo_ttl(TTL_FILE)
         print("Ontologia cargada correctamente.")
@@ -1454,14 +1687,12 @@ class TFG_SistemaCoHousing:
         matriz_afinidad, parejas, ranking = self.motor.calcular_matriz_afinidad_completa(perfiles)
         print(f"Compatibilidad calculada: {len(parejas):,} parejas evaluadas.")
 
-        self.exportador.exportar_csvs_ranking(perfiles, matriz_afinidad, parejas, ranking, RESULTADOS)
         if not args.sin_excel:
             self.exportador.exportar_excel_profesional(perfiles, matriz_afinidad, parejas, ranking, RESULTADOS)
 
         self.exportador.exportar_grafo_semantico_enriquecido(grafo, perfiles, matriz_afinidad, RESULTADOS)
         self.exportador.exportar_alertas_clinicas_y_menus(perfiles, RESULTADOS)
-       
-       # self.exportador.exportar_log_explicabilidad_xai(perfiles, parejas, RESULTADOS)
+        self.exportador.exportar_ranking_parejas(parejas, perfiles, RESULTADOS)
 
         print("Todo correcto. Resultados guardados en la carpeta 'resultados/'.")
 
